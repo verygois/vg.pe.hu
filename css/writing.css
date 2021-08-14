@@ -1,0 +1,124 @@
+html, body {padding:0; margin:0;}
+#writing {
+  font-size: 1.25rem;
+  position: relative;
+  width: 70%;
+  top: 0; left: 0;
+  padding:5% 15% 10%;
+}
+#title {
+  padding:5% 5%;
+  font-weight:500;
+  font-size:150%;
+}
+#title .right {float:right;}
+#log {pointer-events:none;}
+#log p {
+  display:flex;
+  justify-content:space-around;
+  white-space: break-spaces;
+  text-align:center;
+  font-size:2rem;
+  padding:1rem;
+}
+
+#writing textarea {
+	padding:1.5%;
+	margin:0;
+	border:0.1rem solid;
+	border-radius:0.5rem;
+	font-size:1.25rem;
+	width:97%; height:12.5rem;
+}
+#writing input[type="submit"] {
+	font-size: 1.5rem;
+	cursor:pointer;
+	width:100%;
+	margin-bottom:2.5rem;
+	padding:0.5rem 0;
+	background: #fff;
+	color: #000;
+  border:0.1rem solid;
+	border-radius:2.5rem;
+}
+#writing input[type="submit"]:hover {
+  color:#fff;
+	background:pink;
+}
+
+#onmouse {
+  z-index:50;
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0; left:0;
+}
+#onmouse {
+  opacity:0;
+  pointer-events:none;
+  font-size:1rem;
+	-webkit-transition: opacity 1s linear;
+	transition: opacity 1s linear;
+}
+#onmouse_open,
+#secretcrane #log {
+  overflow-y:auto;
+  overflow-x:hidden;
+  position:absolute;
+  top:50%; left:50%;
+  padding:2.5%;
+  background-color:rgba(255,255,255,0.9);
+  -webkit-transform:translate(-50%,-50%);
+  transform:translate(-50%,-50%);
+}
+#secretcrane #log {
+  max-height:75vh;
+}
+#secretcrane a {
+  position:absolute;
+  bottom:2.5%; right:5%;
+}
+#secretcrane #log p:nth-of-type(n+2) {display:none;}
+#onmouse_open #by {padding:1rem 0; text-align:right;}
+
+#onmouse_button {
+  position:fixed;
+  z-index:100;
+  bottom:2.5%;
+  left:2.5%;
+  width:2.5rem;
+  height:2.5rem;
+  font-size:2.5rem;
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+  padding:0.5rem;
+  border:0.1rem solid;
+  border-radius:50%;
+  font-family: 'arial',sans-serif;
+  text-decoration:none;
+  color:#000;
+}
+#onmouse_button:hover {
+  color:pink;
+  cursor:pointer;
+}
+#onmouse_button:hover + #onmouse {opacity: 1;}
+
+#secretcrane a {text-decoration:none; color:pink;}
+
+@media screen and (max-width: 900px){
+  #writing,
+  #onmouse_open
+  {font-size:75%;}
+  #onmouse {
+    position:relative;
+    top:0; left:0;
+    height:25rem;
+    opacity: 1;
+  }
+  #onmouse_open {
+    width:50%;
+  }
+  #onmouse_button {display:none;}
+}
