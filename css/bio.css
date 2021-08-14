@@ -1,0 +1,73 @@
+#bio {
+  position: relative;
+  font-family:"Yu Gothic";
+  max-width:750px;
+  padding:2.5rem 0;
+  margin:auto;
+  font-size:0.9rem;
+}
+#bio a {color: #000000;}
+#bio span {zoom:90%;}
+
+header, #bio h3 {font-family: 'Lucida Console', Courier, monospace;}
+#bio h1, #bio h2, footer b {font-family:'Great Vibes', cursive;}
+#bio h4, #bio em {font-family: "Times New Roman", "Times", serif;}
+#bio p {font-family: "Arial", sans-serif;}
+
+#bio h1, footer h2, #bio h3 {font-weight:400;}
+#bio h1, #bio h3 {text-align:center;}
+
+#bio h1 {
+  font-size:75%;
+  padding:5vw;
+  line-height:500%;
+  transform:scale(1,5);
+  pointer-events:none;
+}
+#bio h4 {font-size: 75%; border: 1px solid;}
+
+#bio h4 {
+background-color: rgba(255,255,255,0.75);
+padding: 0.5rem 1rem;
+}
+
+#bio strong, #bio b {
+  padding:0.5vw 1vw;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+#bio h3 a {
+  color: #fff;
+  padding:1vh 1vw;
+  background-color: red;
+  text-decoration: none;
+}
+#bio h3 a:hover, #bio u {
+  color: red;
+  background-color: #fff;
+}
+#bio u {
+  display:block;
+  padding:0 1rem;
+  text-decoration:none;
+}
+
+#bio em, #bio i {font-size: 125%;}
+#bio ol {padding:0.5rem 2rem;}
+#bio .note {padding:0.5rem 0 1rem;}
+
+footer h2 {
+  margin: 2rem auto 1rem;
+  font-size:100%;
+  max-width:750px;
+  text-align:right;
+}
+footer h2 b {font-size:150%;}
+
+footer {
+  padding:0 2.5vw;
+}
+
+@media screen and (max-width: 750px){
+}
