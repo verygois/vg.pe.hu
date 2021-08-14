@@ -35,7 +35,7 @@ $("#").load("");
 <h3><em>　</em></h3>
 <h1>VG CTLG</h1>
 <p>2014年2月に <a href="http://vg.pe.hu/jp/cm/kaochomex/">中尾香織</a> とともにスタートした <a href="https://web.archive.org/web/20160816120030/http://nnnnnnnnnnnnn.web.fc2.com/nn.html">ナイスショップスー</a> を終了し、2021年6月から 世界中のすごい商品を世界中のすごいインディペンデントスペースに流通するディストリビューションサービス <a href="http://vg.pe.hu/ctlg/">VG CTLG</a> を開始</p>
-<h4>2021年6月、ペフが運営するウェブショップ兼ニュースメディア <a href="http://newlifecollection.com/?ca=35">NewLifeCollection</a> 内に、取扱商品や影響を受けたものごとを紹介するコンテンツを開設し、 <a href="http://creative-community.pe.hu/coding/">卸販売</a> を開始ました。</h4>
+<h4>2021年6月、ペフが運営するウェブショップ兼ニュースメディア <a href="http://newlifecollection.com/?ca=35">NewLifeCollection</a> 内に、取扱商品や影響を受けたものごとを紹介するコンテンツを開設し、 <a href="http://newlifecollection.com/?ca=83">卸販売</a> を開始ました。</h4>
 </div>
 <footer>
 <h2>direct by <b>Kazuma Sasajima</b></h2>
