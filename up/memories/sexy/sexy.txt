@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ho-mpe-ji-zukuri  !</title>
+<style>
+html, body, main {height: 100%;}
+html {background-color: #; font-size: ; font-family: "";}
+a {color: black;}
+a:hover {background-color: yellow; color: blue;}
+hr {border: 0; clear: both;}
+main {position: relative; z-index: 1;}
+#video {float: left; width: 28vw; height: 20vw;
+opacity: 0.1;
+-webkit-transition: opacity 1s ease-out;
+-moz-transition: opacity 1s eae-out;
+-ms-transition: opacity 1s ease-out;
+transition: opacity 1s ease-out;}
+#video:hover{
+  opacity: 1;
+-webkit-opacity: 1;
+-moz-opacity: 1;
+filter: alpha(opacity=100);	/* IE lt 8 */
+-ms-filter: "alpha(opacity=100)"; /* IE 8 */
+}
+#nakami {position: absolute; top:0; z-index: 0; padding: 1vw;}
+#back {position: fixed; top:0; right:0; padding: 0; float: right; width: 50%; height: 100%; z-index: -1;}
+#name {position: relative; z-index: 1; clear: both; padding: 1vw;}
+</style>
+</head>
+<body>
+
+<main>
+<div id="video">
+<iframe src="https://drive.google.com/file/d/1kmx2ImHzDK42NfMdukGiEbdcbds7eftm/preview" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="video">
+<iframe src="https://drive.google.com/file/d/1h-kqlq8IH7CIkohIwmFvUYnxNByF7kcj/preview" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="video">
+<iframe src="https://drive.google.com/file/d/1NZktBu6kD5vrPEb-GaT5nhdjyOB6ZsbH/preview" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="video">
+<iframe src="https://drive.google.com/file/d/1yxr-VYufLyRtkxOcQrKZBL8MB7DURuxA/preview" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="video">
+<iframe src="https://drive.google.com/file/d/1VZKc718LhcGby2hLYSonWC-BBDtCQwEB/preview" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="video">
+<iframe src="https://drive.google.com/file/d/1UkHUjpo6QPWwIfksJBi7doet-kblFoI2/preview" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="video">
+<iframe src="https://drive.google.com/file/d/1RI79N9MOTzVK4zN1VALMbb6iPcjTzXid/preview" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="video">
+<iframe src="https://drive.google.com/file/d/1t_MTal9p0f8yodvWuAojYijqc57vzZU3/preview" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="video">
+<iframe src="https://drive.google.com/file/d/1PqEXEmSq47yJ-Cfqc6lFmCBNO8wxRQT8/preview" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="video">
+<iframe src="https://drive.google.com/file/d/1cyCchZT9eKUaOszd29CGxI1vXjdWidg_/preview" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="video">
+<iframe src="https://drive.google.com/file/d/1RaPE7VsGJ2XbBu_sH8He944bFZcLpLf9/preview" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="video">
+<iframe src="https://drive.google.com/file/d/1BxcBLCMVazzlgbMHQUhJ9t2PvGIVdse8/preview" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="video">
+<iframe src="https://drive.google.com/file/d/1JTjEKfawkIUvhz5jm7iEmdY4LNWY7oAu/preview" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="video">
+<iframe src="https://drive.google.com/file/d/1JJo5xfA5zPS-vvsYzxHyUJiVZUgtx_35/preview" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+</div>
+<hr/>
+<div id="video">
+<iframe src="https://drive.google.com/file/d/1vrdgYonBAVntZk6JJhixQReMQEnE6XW_/preview" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="video">
+<iframe src="https://drive.google.com/file/d/1_F27RSq0RugJLx0_lmvH_jLXg15sqqCr/preview" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="video">
+<iframe src="https://drive.google.com/file/d/1zW6v10n9aCflegfjR23KSjTXrMqlpwca/preview" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="video">
+<iframe src="https://drive.google.com/file/d/1BY6tW4w1Qohja_THJgFNYqNgrjF_MZIP/preview" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="video">
+<iframe src="https://drive.google.com/file/d/1FdoCJ_HpsQewdW11UWvtYl4OsHz9TXuN/preview" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="video">
+<iframe src="https://drive.google.com/file/d/1wixMPHRygrYjZYIs6QPCYQ8gCIzDJfcX/preview" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+</div>
+<div id="video">
+<iframe src="https://drive.google.com/file/d/1fuT73V9C7Qx1ByjHF_TJ10sO0jEg0P2Q/preview" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+</div>
+<hr/>
+<div id="video">
+<iframe src="https://drive.google.com/file/d/1FjejL4sJrsGgychJeWfTY70tplw0W_k_/preview" width="640" height="480" frameborder="0" allowfullscreen></iframe>
+</div>
+</main>
+<div id="nakami">
+<u>ironnnaibentoyarimasita</u>
+<b>zenbutanosikattades</b>
+<p><Marquee direction="down" direction="up" width="400" height="400" scrollamount="4"><FONT color="#000099">�B�u�B�u�B�u�B�u</FONT></MARQUEE>
+�Ⴊ�~����</p>
+<p><u>E         N         D</u></p>
+<i>the E    N     D</i><br/>
+<p><j>sankyu-na</j></p>
+<h1>ho-mpe-ji-zukuri  !</h1>
+   <br/>
+o-kinina
+<Marquee behavior="alternate" width="800" height="500" scrollamount="4"><FONT color="#000099">�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@�@���ނ�</FONT></MARQUEE>
+
+<b>bbb</b>
+<u>uuuu</u>
+<i>iii</i>
+<h2>jjjj</h2>
+</div>
+
+<div id="name">
+Thank you 
+<b>ootsusan</b>
+<b><a href="http://konishiayami.party/">ayami konishi</a></b>
+<b><a href="https://www.instagram.com/chika4ngel/">chika4ngel</a></b>
+<b><a href="https://twitter.com/HDDNOi">??�wDove</a></b>
+<b><a href="https://twitter.com/ya_sa_C">�}�{����</a></b>
+<b> <a href="http://5ft46.net/">5ft46</a></b>
+<b><a href="https://www.instagram.com/6.7.r.n/">6.7.r.n</a></b>
+and
+<b><a href="http://www.marshallsarah.com/">Sarah Marshall</a></b>
+<b><a href="http://npanzer.com/">Natalia Panzer</a></b>
+</div>
+<OBJECT id="back" DATA="http://vg.pe.hu/up/sexy.txt" TYPE="text/html" width="50%" height="100%"></OBJECT>
+</body>
+</html>

@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>クールス | COOLS</title>
+<style>
+html, body, div, {width:100%; height: 100%;}
+html {font-family: "Comic Sans MS","ＭＳ Ｐ明朝"; letter-spacing: 0.10em;}
+a {
+color: #000;
+line-height: 2em;
+text-decoration: none;
+}
+A:hover {
+color: #000;
+}
+#day1 A:hover {
+background-color: #fff;
+color: blue;
+}
+#day2 A:hover {
+background-color: #fff;
+color: yellow;
+}
+.bottom A:hover {
+color: red;
+}
+.top{
+position: fixed;
+text-align: center;
+  left: 0;
+width: 100%;
+z-index: 5;
+font-size: 2em;
+line-height: 1.23em;
+pointer-events: none;
+}
+.non {
+pointer-events: none;
+}
+.bottom{
+background-color: #fff;
+position: fixed;
+text-align: center;
+  left: 1.5%;
+  bottom: 0%;
+width: 97%;
+z-index: 5;
+line-height: 2em;
+}
+.red {color: red;}
+.info{ margin: 15% 10% 0%; }
+.pro{ margin: 5em 10%;
+    direction:ltr; }
+.act { font-size: 1.3em; }
+h1 {
+font-size: 1.1em;
+padding: 0.5em;
+}
+h2 {
+font-weight: normal;
+font-size: 1.6em;
+}
+u {
+font-size: 1.em;
+background-color: #fff;
+padding: 0.5em 1em;
+line-height: 2em;
+}
+#day1 {
+background-color: blue;
+position: absolute;
+top: 0;
+left: 0;
+    direction:rtl;
+z-index: 1; height:100%; width: 50%;
+overflow-y: scroll;
+}
+#day2 {
+background-color: yellow;
+position: absolute;
+top: 0;
+right: 0;
+z-index: 1; height:100%; width: 50%;
+overflow-y: scroll;
+}
+
+#map{
+background-color: #CCFFFF;
+position: absolute;
+top: 0;
+left: 0;
+width: 95%;
+padding: 2.5%;
+    z-index: 4;
+}
+
+
+/* CSS3 ModalWindow SET
+-------------------------- */
+@-webkit-keyframes modalFadeIn {
+    0% {opacity:0;display:block;}
+    100% {opacity:1;}
+}
+div#modal div:target {
+    -webkit-animation-name: modalFadeIn;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    opacity: 1;
+    display:block;
+}
+</style>
+</head>
+<body>
+<div id="day1">
+<div class="info">
+<h1>DAY1</h1>
+<u>October 8, 2017 sun</u>
+  <h2><a href="https://soundcloud.com/rnpetalgaz/">Jeff Witscher</a> / <a href="http://ericanthonyfrye.com/">Eric Frye</a><br/><small>japan 2017  final</small></h2>
+<h2><small>Special guest</small><br/><a href="https://matthewsullivanearn.bandcamp.com/">Matthew Sullivan</a></h2>
+<p class="act"><a href="https://soundcloud.com/nozomu-matsumoto">Nozomu Matsumoto</a> + <a href="https://soundcloud.com/whitecompany">H. Takahashi</a><br/><a href="https://soundcloud.com/takamitsuohta">Takamitsu Ohta</a><br/><a href="http://010001111000.com/">010001111000</a><br/><a href="https://soundcloud.com/yusakuarai">Yusaku Arai</a></p>
+  <p class="act">Exhibition<br><a href="https://knd.space/">Satoshi Kanda</a></p>
+  <br/>
+<hr />
+</div>
+<!--
+<img src="https://reserva.be/reserva/images/btn_reserve_1.png"/>
+ -->
+<div class="pro">
+  <p><font face="Comic Sans MS,Meiryo">Jeff Witscher | ジェフ・ウィッチャー</font>
+<img src="https://68.media.tumblr.com/6a37f9055a9015e3aa78a8988a9ad257/tumblr_inline_ou3p1eLQgA1trunyo_540.jpg" width="100%"/></p>
+  <p>1983年カリフォルニア・ロングビーチ生まれ。現在はポートランドで自身の清掃会社「Vincent's Expert Cleaners」を管理しています。彼はこれまでに数多くの名義を使い分けて精力的に音楽作品を発表していました。おそらく最も知らている名義はRene Hellでしょう。 また熱烈 なチェスプレイヤーであり、近年は清掃業と読書とチェスを中心とした生活を送っているそうです。<br/>
+オーガニック・フィールド・レコーディングと電子音をハイブリットした彼の音楽が持つ最大の魅力は、飾り気の無い美しさ 。 ライブ・パフォーマンス では、より繊細かつ壮大な物語性のある表現を試みます。</p>
+  <a href="https://soundcloud.com/rnpetalgaz/">soundcloud.com/rnpetalgaz</a><br/>
+  <a href="http://saloncdr.blogspot.com">saloncdr.blogspot.com</a><br/>
+</div>
+<div class="pro">
+  <p><font face="Comic Sans MS,Meiryo">Eric Frye | エリック・フライ</font>
+<img src="https://68.media.tumblr.com/b9ad21e329dc972778fa2425376db34f/tumblr_inline_ov1jb7iojL1trunyo_500.jpg" width="100%"/></p>
+  <p>アメリカを拠点とする作曲家、アーティスト、キュレーター。彼はこれまでに細分化され続けた実験音楽におけるジャンルの境界を超越した、数学や言語学に基づいた彼独自の哲学による音響の在り方を探求しています。<br/>マルチチャンネル音響を用いて複数のレイヤーを持った音を空間に配置する彼のライブ・パフォーマンスやインスタレーションは、聴覚で動きや物質を表現すると同時に、耳では感知できえない音の波形（コンピューター上に現れる音の形で描かれたドローイング）や、空白（無音を用いて目に見えない物体を創り上げるかのようなインスタレーション）などを主題とした従来の音楽的価値観では捉えきれない表現にも感じられるはずでしょう。</p>
+  <a href="http://ericanthonyfrye.com/">ericanthonyfrye.com</a><br/>
+</div>
+<div class="pro">
+  <p><font face="Comic Sans MS,Meiryo">Matthew Sullivan | マシュー・サリバン</font></p>
+  <p> Matthew Sullivan はロサンゼルスのサウンド・アーティスト。過去には Earn などの名義で数多くの作品を発表、近年はSean McCann とのコラボレーションを頻繁に行っています。<br/>
+2016年に本名名義では初となるソロアルバム「Skene（ Recital ）」をリリース。 打楽器、具体音、電子音をコラージュし不透明な物語を創造します。<br/>
+2007年から2012年にはカセットレーベルEkheinを運営。現在は、アーマンド・ハマー美術館やロサンゼルス現代美術館にて演奏を行うなど、ロサンゼルスを拠点に多数の公的・私的イベントをキュレーションしています。</p>
+  <a href="https://matthewsullivanearn.bandcamp.com/">matthewsullivanearn.bandcamp.com</a><br/>
+</div>
+<div class="pro">
+  <p><font face="Comic Sans MS,Meiryo">松本望睦  | Nozomu Matsumoto</font></p>
+  <p>1990年横浜市生まれ。多摩美術大学卒業。<br>
+主なサウンドデザインに『サステイナブル  アワーズ』ナイル・ケティング、「曖昧な関係」メゾンエルメス(2016／東京)、『犬島家プロジェクト』SANAA、ヴェネチア・ビエンナーレ国際建築展(2016／ヴェネチア)。主なグループ展に「Malformed  Objects  -  無数の異なる身体のためのブリコラージュ」山本現代(2017／東京)、主なキュレーションに、「インフラ | INFRA」(2017／東京)、「東京アートミーティングVI”TOKYO” ー見えない都市を見せる」東京都現代美術館 (2015／東京)。
+  </p>
+  <a href="https://soundcloud.com/nozomu-matsumoto">soundcloud.com/nozomu-matsumoto</a><br/>
+</div>
+<div class="pro">
+  <p>H. Takahashi</p>
+  <p>1986年 東京生まれ。建築家・作曲家。DIYを主軸にできる限り要素を減らした簡素な方法で制作を行う。作曲にはiPhoneのGarageBandを用いアンビエントをメインとした 作品をWhere To Now?(UK)、Constellation Tatsu(US)等々から発表。また、アンビエントユニットUnknown Meの作曲なども行う。
+  </p>
+  <a href="https://soundcloud.com/whitecompany">soundcloud.com/whitecompany</a><br/>
+</div>
+<div class="pro">
+  <p><font face="Comic Sans MS,Meiryo">大田高充 | Takamitsu Ohta</font></p>
+  <p>1980年生まれ。成安造形大学卒。<br/>
+場所・土地・環境から発生する固有の自然現象に注目した作品を制作。<br/>
+音作品及び音響への取り組みとして2013年に"Guwez/Yzurm" Self-help Tapes（スウェーデン）を、2017年にAnne-Françoise Jacquesとの共作"Two Forms Of Contact With Objects"をMore Mars（ギリシャ）よりリリース。<br/>
+2015年にグループ展「Tomorrow, Today will be Yesterday」（ポルトガル）に参加。<br/>
+2017年活動再開となったSenufo Editionsより作品集"elemental studies"を発表。
+  </p>
+  <a href="https://soundcloud.com/takamitsuohta">soundcloud.com/takamitsuohta</a><br/>
+</div>
+<div class="pro">
+  <p>010001111000</p>
+  <a href="http://010001111000.com/">010001111000.com</a><br/>
+</div>
+<div class="pro">
+  <p><font face="Comic Sans MS,Meiryo">荒井優作 | Yusaku Arai</font></p>
+  <a href="https://soundcloud.com/yusakuarai">soundcloud.com/yusakuarai</a><br/>
+</div>
+<div class="pro">
+  <p><font face="Comic Sans MS,Meiryo">神田聡 | Satoshi Kanda</font></p>
+  <p>エレキベース、牛乳瓶、紐などを演奏します。<br/>
+最近はパソコンなどの電子機器の演奏を行っています。
+</p>
+  <a href="https://knd.space/">knd.space</a><br/>
+</div>
+</div>
+<div id="day2">
+<div class="info">
+<h1>DAY2</h1>
+<u>October 9 2017, mon/holiday</u>
+  <h2><a href="http://nkzine.free.fr/">Z.B. Aids<br/><small>(Hendrik Hegray, Nazi Knife, Premier Sang…)</small></a><br/>Saada Abe<br/><a href="http://cargocollective.com/sammystein">Sammy Stein <small>(LAGON, COLLECTION)</small></a><br/></h2>
+  <p class="act"><a href="https://soundcloud.com/youpy">youpy</a><br/><a href="http://mdel.co.jp/bunch/bunch.html">KAIRAI-BUNCH</a><br/><a href="http://yopaakuyu.wixsite.com/ryoheikobayashi">Ryohei Kobayashi</a><br/>
+  <a href="http://tanzaqueee.blogspot.jp/">Nothto</a><br/></p>
+  <p class="act">Exhibition<br><a href="https://knd.space/">Satoshi Kanda</a><br/></p><br/>
+<hr />
+</div>
+<!--
+<img src="https://reserva.be/reserva/images/btn_reserve_1.png"/>
+ -->
+<div class="pro">
+  <p><font face="Comic Sans MS,Meiryo">Z.B. Aids | Z.B. エイズ</font>
+<img src="https://68.media.tumblr.com/fc470209cd9e29c5d27710cb79fac95e/tumblr_inline_ovk2u5uRJQ1trunyo_500.jpg" width="100%"/></p>
+  <p>1998年から1999年の間にすべてが始まった。(No Name) が Hélicoptère Sanglante となり、一時的にAfrican DiscothèqueとThaï Horseという名義に分かれ、その後にPopol Gluant、最終的に（=現在）Z.B. Aids a.k.a. Valerie Smith として活動している。ダニエル・ジョンストン、アン・ラプランティーンから影響を受け、残りのすべてをイヴル・モイスチャーから学んだ。</p>
+    <p>ヘンドリク・ヘグレー（グラフィック・ジンと現代アートのシーンで進化するビジュアルアーティストであり、Nazi Knife と False Flag マガジンの共同運営者。2014年にPrix Ricardにノミネートされ、近年Paraguay PressのJonas Delabordeとの壮大なコラボレーション・ブックを出版）のソロ音楽プロジェクトは、電子/磁気音楽を独創的なビジョンでフィジカルに表現することを重要視している。生の振動、操作された（またはされない）テープ、骨格のリズム、破損した周波数、時にはエレクトリックギターを使用し、細分化されるジャンルや明確な音楽シーン、「パリのノイズ」シーンから離れることを試み続けている。（きっとパリに住んでいない多くの人々には、彼の国籍や所在地を知るすべはなかったはずでしょう。）<br/>
+    これまでに、ヨーロッパ全土（特にベルギーとイタリアで頻繁に）、カイロ（近くScum Yr Earthからライブテープをリリース予定）、アメリカ（プロビデンス、デトロイト、シカゴ、ポートランド、マイアミ、ボストン、フィラデルフィア、ニューオーリンズ、 等）にて数多くの演奏を行い、メンフィスで撮影されたリリー・レイノー=デワールの映画に出演。Wolf Eyes, Demons, Sister Iodine, Fuck Buttons, Family Battle Snake, Damon and Naomi, Rodger Stella, Sick Llama, あふりらんぽ、などと共演。Dennis Tyfus (Ultra Eczema), Andy Bolusとのコラボレーションや、いくつかのサブプロジェクト（Mintel and Haine w/ members of Sister Iodine, Molière with Jean-Charles Delarue / Scenes from Salad）を持ち、音楽レーベルPremier Sangを運営（Macronympha, Lasse Marhaug, JOJO広重, Sick Llama, 等の音源をリリース）している。今年の9月には２つのソロアルバムをリリース。また、彼は映像作家でもあり、現在エジプトで撮影した映像作品を制作中。<br/>
+  </p>
+</div>
+<div class="pro">
+  <p>Saada Abe</p>
+  <p>宇宙のダークサイドへ逃避する電子音と連続音。<br/>
+古代の宇宙飛行士のスコア。メガリズムの呪文。 </p>
+  <p>Electronic and continuous sounds escaped from the dark side of outer space.
+<br/>Ancient astronauts scores. Megalithic incantations. </p>
+</div>
+<div class="pro">
+  <p>Sammy Stein</p>
+<img src="http://4.bp.blogspot.com/-Dt8mwqfgr1c/Te80vwAeOUI/AAAAAAAABO8/Za4FEu1eFCE/s1600/IMG_5263.JPG" width="100%"/>
+  <p>2004年にパリの国立高等美術学校を卒業したアーティストであり、独自の切り口で現代美術を紹介するインタビュー雑誌「Collection | コレクション」の創始者の一人。アートデザイナー・編集者としても活動しています。<br/>
+少ないセリフで独自のファンタジー観を描くロマンチックな漫画、物事の関係や動きをパラパラ漫画のように描くユーモラスな漫画など、言語や世代を超えて誰でも楽しめるであろう普遍性をもつ漫画作品などを制作しています。
+ </p>
+  <p>かつては、フランスのビッグパーティ「レナルドクルー」の一員としても活動していた彼が、LAGON JAPANプロジェクトのクロージングもかねて急遽出演決定です！</p>
+</div>
+<div class="pro">
+  <p>youpy
+<img src="https://lh3.googleusercontent.com/3BtUiQ-FmyGlJCfFh8tfaWSY4gSKHBaC22RTRl4T6FVJpZrzZaDH69RRZGylRZDZc27x7qyXQPy-RXgb3oqqK7pO3sRSsy0ptukCm1AIiLAfn-pTUqeg2yKekGeDa02sY7CHv6rZ2F4GxTAe9H_01P-YgnwNxZWUP5-sC_Bg-PdPvBOPg2by06ADQJDqo6mhlS6lWkmyJwMmJLLvxNbPbAeeArr5ebDjQqg8nVMbK0lben_U40ANAZBHTvAVxxjn1AauFlUlLbtxvRneT145bfDYR6FoFBlGqB7NIcSe0JRa9l-FGcUAb5I98Fa0bzAzcsuC8ATOH8cCLpw0LPQmI9IXKdy-SpcebiPxNu1zNz4RymzDShiO3DLWwNZADXyNz-m-KbqKWhKx_INJwQfI4phMIsac68en9FRUvboG6e37umg4Uk2SndoiyYjACNbZz9GTQ1Zaat1k9C5pS8hYqstR_wgSKvJZlNtHTEBGHMz1VSgJbUqe1HAH31YIyWtrJ0SnDz2TJHEMfxAV2k8Ye4OU7HY2jEEct7urgTaPN4Cm72VUdMMGYc1LP1AixJpoJzlzkBXEw_dnlBdmY1DwScSOwKeAhRHN2Nh3W8IFyiKu_TymCwis5XgI9fdO7RYW2CMtQGmT4m29HaxrRTYgMRo2LAEUmUNtBZrnN1RVRkGYMfw=w506-h674-no" width="100%"/></p>
+</div>
+<div class="pro">
+  <p><font face="Comic Sans MS,Meiryo">傀儡一家 | KAIRAI-BUNCH</font>
+<img src="http://mdel.co.jp/m/wp-content/uploads/2014/03/copy-2012-12-07_20-18-30_929.jpg" width="100%"/></p>
+  <p>1996年、インダストリアル・ノイズ・テクノバンド【スペースストリーキングス】のメンバーであった、清水、能島、両名は新たな表現手段としてのマシン製作活動を開始する。<br/>
+同年秋の大阪BaysideJennyでの炎上ライブをきっかけに、当時Bar Noiseの経営者であった野津哉美氏と出会い、デストロイドロボットとのマシンバトル活動をはじめる。<br/>
+年数回のペースで行ったデスロボとのマシンバトルから得たノウハウ（教訓）をフィードバックさせる形で2002年5月、新たにバトルマシンパフォーマンス集団として、カイライバンチを結成する。</p>
+  <a href="http://mdel.co.jp/bunch/bunch.html">mdel.co.jp/bunch/bunch.html</a><br/>
+</div>
+<div class="pro">
+  <p><font face="Comic Sans MS,Meiryo">小林亮平 | Ryohei Kobayashi</font></p>
+  <p>hottrocheとしてアルバムを2枚発表、ツポールヌとしてアルバムを１２作発表。</p>
+  <a href="http://yopaakuyu.wixsite.com/ryoheikobayashi">yopaakuyu.wixsite.com/ryoheikobayashi</a><br/>
+</div>
+<div class="pro">
+  <p><font face="Comic Sans MS,Meiryo">Nothto</font></p>
+  <p>直嶋岳史 1981年生まれ。ジャンク品のミキシングボード本体のヒスノイズを使用した可聴ぎりぎりの小音量での即興演奏を行う中で、音そのものよりも演奏行為と時間の受け止められかたの方へと関心が向かう。レーベル「Encadre」の主催、新・方法の平間貴大との「人数」、音楽家～美術家による公共の場所を使用したコンサートシリーズ「公園コンサート」の企画、bikiとの「BE△ST」、Nothto名義でのDJとしても活動している。
+</p>
+  <a href="http://tanzaqueee.blogspot.jp/">tanzaqueee.blogspot.jp</a><br/>
+</div>
+<div class="pro">
+  <p><font face="Comic Sans MS,Meiryo">神田聡 | Satoshi Kanda</font></p>
+  <p>エレキベース、牛乳瓶、紐などを演奏します。<br/>
+最近はパソコンなどの電子機器の演奏を行っています。
+</p>
+  <a href="https://knd.space/">knd.space</a><br/>
+</div>
+</div>
+<div class="top">
+<font class="non" face="Comic Sans MS,Meiryo">COOLS | クールス<br/></font>
+  <span class="non"><br/>a<br/>t<br/><br/><br/><b>P<br/>O<br/>O<br/>L</b></span>
+</div>
+<div id="map" style="display:none;clear:both;">
+  <p>pool (tokyo)</p>
+<p>〒176-0002 東京都練馬区 桜台1-7-7 B2F<br/>
+  B2F, 1-7-7, Sakuradai, Nerima-ku, Tokyo, 176-0002, Japan</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12953.821828769904!2d139.6621291!3d35.7396086!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x49e59903aa1b1598!2spool!5e0!3m2!1sja!2sjp!4v1505825845980" width="100%" height="555" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<div class="bottom">
+1 day only : adv 3000jpn / door 3500jpn | <b class="red">*2 days : 5000jpn</b> [<a style="cursor:pointer;" href="#" onclick="obj=document.getElementById('map').style; obj.display=(obj.display=='none')?'block':'none';" >ACCESS</a>]
+</div>
+</body>
+</html>

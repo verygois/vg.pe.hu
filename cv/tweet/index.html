@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width">
+    <title>TWEET 2017-2019</title>
+    <script src="js/react.development.js"></script>
+    <script src="js/react-dom.development.js"></script>
+    <script src="js/babel.min.js"></script>
+<link rel="stylesheet" type="text/css" href="js/tweet.css"/>
+  </head>
+  <body>
+  <div id="top">
+  <h1><img src=media/i.jpg width="50vw"> TWEET 2017-2019</h1>
+  <p>by 🐴</p>
+  <p><img src=media/me.png width="100%"></p>
+  </div>
+    <div id="root"></div>
+    <div id="main">
+    <script type="text/javascript">
+      window.YTD = {
+        tweet: {},
+        account: {},
+      }
+    </script>
+    <script type="text/javascript" src="js/tweet.js"></script>
+    <script type="text/javascript" src="js/account.js"></script>
+    <script type="text/babel">
+      const accountName = window.YTD.account.part0[0].account.username;
+      const createdStr = window.YTD.account.part0[0].account.createdAt;
+      const createdDate = new Date(/^[0-9]+$/.test(createdStr) ? parseInt(createdStr) : createdStr);
+
+      function Media(props) {
+        const data = props.data;
+        if (data.type == 'photo') {
+          return <img src={data.media_url_https} />;
+        }
+        else {
+          return <p>Unknown media attachment.</p>;
+        }
+      }
+
+      function Tweet(props) {
+        const data = props.data.tweet ? props.data.tweet : props.data;
+        const url = "https://twitter.com/" + accountName + "/status/" + data.id_str;
+        var media = [];
+        if (data.extended_entities) {
+          media = data.extended_entities.media.map((media, index) => {
+            return <Media data={media} key={index} />;
+          });
+        }
+        return (
+          <div class="tweet">
+            <p>{data.full_text}</p>
+            <div>{media}</div>
+            <u>{data.created_at}</u>
+          </div>
+        );
+      }
+
+      class App extends React.Component {
+        constructor(props) {
+          super(props);
+          this.state = {
+            year: '',
+            month: '',
+            searchTerm: "",
+          };
+        }
+
+        render() {
+          const years = [];
+          const now = new Date();
+          for (var i = 2017; i <= 2019; i++) {
+            const year = i;
+            const onClick = () => {
+              this.setState((prevState) => {
+                return {
+                  ...prevState,
+                  year,
+                };
+              });
+            };
+            years.push(<button class="year" key={i} onClick={onClick}>{i}</button>);
+          }
+
+          const months = [
+            'All',
+            'Jan',
+            'Feb',
+            'Mar',
+            'Apr',
+            'May',
+            'Jun',
+            'Jul',
+            'Aug',
+            'Sep',
+            'Oct',
+            'Nov',
+            'Dec',
+          ].map((name) => {
+            const onClick = () => {
+              this.setState((prevState) => {
+                return {
+                  ...prevState,
+                  month: name,
+                }
+              })
+            }
+            return <button class="month" key={name} onClick={onClick}>{name}</button>;
+          });
+
+          const month = this.state.month;
+          const year = this.state.year;
+          const searchTerm = this.state.searchTerm;
+
+          const tweets = window.YTD.tweet.part0;
+          const filteredTweets = tweets.filter((tweet) => {
+            if (tweet.tweet) {
+              tweet = tweet.tweet
+            }
+            if (searchTerm != "") {
+              const haystack = tweet.full_text.toLowerCase();
+              const needle = searchTerm.toLowerCase();
+              return haystack.indexOf(needle) != -1;
+            }
+            else {
+              return tweet.created_at.endsWith(year.toString()) &&
+                (month == 'All' || tweet.created_at.indexOf(month) != -1)
+            }
+          });
+          const maxTweets = 1000;
+
+          var elements = [];
+          for (var i = 0; i < Math.min(maxTweets, filteredTweets.length); i++) {
+            const data = filteredTweets[i];
+            elements.push(<Tweet key={data.id_str} data={data} />);
+          }
+          if (maxTweets < filteredTweets.length) {
+            elements.push(<div key="toomany">
+              <h2>Too many results, only showing {maxTweets}</h2>
+            </div>)
+          }
+          if (filteredTweets.length == 0) {
+            elements.push(<div key="none">
+              <h2>No tweets found!</h2>
+            </div>)
+          }
+
+          var title;
+          if (searchTerm != "") {
+            title = "Search: " + searchTerm;
+          }
+          else {
+            title = month + " " + year;
+          }
+          title += " (" + filteredTweets.length + " results)";
+
+          const handleChange = (event) => {
+            const newText = event.target.value;
+            this.setState((prevState) => {
+              return {
+                ...prevState,
+                searchTerm: newText,
+              }
+            });
+          };
+
+          return (
+            <div>
+              <nav>
+                {years}
+              </nav>
+              <nav>
+                {months}
+              </nav>
+              <p id="form">
+              <input class="search" type="text" onChange={handleChange} value={searchTerm} />
+              </p>
+              <h2>{title}</h2>
+              <div>
+                {elements}
+              </div>
+            </div>
+          );
+        }
+      }
+
+      ReactDOM.render(
+        <App />,
+        document.getElementById('root')
+      );
+
+    </script>
+    </div>
+  </body>
+</html>

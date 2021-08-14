@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Chenge the Words</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width">
+<style type="text/css">
+html, body {overflow-x: hidden;}
+h1 {font-size: 5em;}
+#top {font-family: "MS Gothic", "Osaka", meiryo, sans-serif; left: 50%; top: 50%; position: absolute;}
+.main {width:50vw; transform: translate(-50%, -50%);}
+</style>
+</head>
+<body>
+<div id="top">
+<div class="main">
+<h1><span id="rename"></span></h1>
+</div>
+</div>
+<script>
+var text = ["Sounds,","a lot,", "noise,", "noisy,", "too much,", "busy,", "can not,", "loud," , "don’t want," , "no need," , "fuck all," ];
+var counter = 0;
+var elem = document.getElementById("rename");
+var inst = setInterval(change, 500);
+
+elem.innerHTML = text[counter];
+
+function change() {
+  elem.innerHTML = text[counter];
+  counter++;
+  if (counter >= text.length) {
+    counter = 0;
+  }
+};
+</script>
+</body>

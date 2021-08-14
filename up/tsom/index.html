@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+$("#archives").load("/up/tsom/archives.html");
+})
+</script>
+
+<link rel="icon" href="/cv/logo.png">
+<link rel="stylesheet" type="text/css" href="/css/playing.css"/>
+<style type="text/css">
+body {
+color: #000;
+background:#fff;
+font-size: 90%;
+font-family: "Times New Roman";
+padding:0; margin:0;
+}
+#content {
+font-size: 1.25rem;
+width:90vw; height:90%;
+position: absolute;
+padding:5% 5vw;
+left: 0%;
+font-family: "Arial";
+}
+#content p {font-size: 4.5rem;}
+#content b, #content u {font-size:75%;}
+#content a {
+color:#000;
+text-decoration: none;
+}
+#content i {
+font-family: "Times New Roman";
+font-size:  125%;
+}
+#content p u {
+border: solid 0.25rem;
+border-radius: 1rem;
+padding:1rem;
+text-decoration: none;
+}
+#content u {
+border: solid 1px;
+border-radius: 0.25rem;
+padding:0.25rem;
+text-decoration: none;
+}
+hr {border:none; padding:2.5%;}
+
+@media screen and (max-width: 750px){
+#content p {zoom: 75%;}
+#content {font-size: 2.5vw;}
+}
+@media screen and (max-width: 500px){
+#content p {zoom: 60%;}
+#content {font-size: 1rem;}
+}
+</style>
+<title>The Symphony of Masterpieces</title>
+</head>
+<body>
+<p id="about"><a href="#" onclick="disp(); return false;">傑作の交響曲</a></p>
+<script>// <![CDATA[
+function disp(){
+	window.alert('友達や友達になりたい人に、インターネットで見つけることができる傑作を紹介してもらい、それらを閲覧する上映会／動画配信を行います。');
+}
+// ]]></script>
+<div id="content">
+<p>The Symphony of <i>Masterpieces</i> <u><i>beta</i></u></p>
+<div class="list">
+<span><b>???.??.??</b> <i>Broadcast on ??:?? JST</i> <u>YouTube</u></span><br/>
+<p>will streaming<br/>
+The videos I found in <i>2015-2020</i> Part 4</p>
+<p>Selected by <i>SK.Ⅱ</i></p>
+<span>SK.ⅡがYouTubeで見つけた傑作動画選を配信します。</span><br/><br/>
+<span><u><a href="2015-2020/"><i>Watch the Video</i></a></u></span><br/><br/>
+<hr/>
+</div>
+<hr/>
+<div id="archives"></div>
+<hr/>
+<p>brought to you by <a href="http://vg.pe.hu/"><i>Very Gois</i></a></p>
+<hr/>
+</div>
+</body>
+</html>

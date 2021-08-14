@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+$("#archives").load("/up/tsom/archives.html");
+})
+</script>
+<link rel="stylesheet" type="text/css" href="/css/playing.css"/>
+<style type="text/css">
+body {
+color: #C1AE5E;
+background:#F3CD08;
+font-size: 90%;
+font-family: "Times New Roman";
+padding:0; margin:0;
+}
+#content {
+font-size: 1.25rem;
+width:90vw; height:90%;
+position: absolute;
+padding:5% 5vw;
+left: 0%;
+font-family: "Arial";
+}
+#content p {font-size: 4.5rem;}
+#content b, #content u {font-size:75%;}
+#content a {
+color:#805234;
+text-decoration: none;
+}
+#content i {
+font-family: "Times New Roman";
+font-size:  125%;
+}
+#content p u {
+border: solid 0.25rem;
+border-radius: 1rem;
+padding:1rem;
+text-decoration: none;
+}
+#content u {
+border: solid 1px;
+border-radius: 0.25rem;
+padding:0.25rem;
+text-decoration: none;
+}
+hr {border:none; padding:2.5%;}
+
+@media screen and (max-width: 750px){
+#content p {zoom: 75%;}
+#content {font-size: 2.5vw;}
+}
+@media screen and (max-width: 500px){
+#content p {zoom: 60%;}
+#content {font-size: 1rem;}
+}
+</style>
+<title>The Symphony of Masterpieces</title>
+</head>
+<body>
+<p id="about"><a href="#" onclick="disp(); return false;">2021.5.10</a></p>
+<script>// <![CDATA[
+function disp(){
+	window.alert('Broadcast on 19:00 GMT / 27:00 JST NTS 2');
+}
+// ]]></script>
+<div id="content">
+<p><span>One day, My hero told me about <i>Country Music</i>.</span></p>
+<span>This Mix is Part of <a href="https://www.nts.live/shows/sendspaace"><u>Sendspaace</u></a> that Radio Program on NTS.</span>
+<hr/>
+<div class="list">
+<u>Songlist</u><br/><br/>
+<a href="https://www.youtube.com/watch?v=z3VhU1GuVZg">Brad Paisley <i>This Is Country Music</i></a><br/>
+<a href="https://www.youtube.com/watch?v=UiDjPR9yRDU">Randy Travis <i>Three Wooden Crosses</i></a><br/>
+<a href="https://www.youtube.com/watch?v=pm6DHCpmIWg">Carly Pearce <i>Every Little Thing</i></a><br/>
+<a href="https://www.youtube.com/watch?v=T0U70ehCTm8">Garth Brooks <i>Ask Me How I Know</i></a><br/>
+<a href="https://www.youtube.com/watch?v=AltPn-lC92Y">Reginald Wrangler <i>Brake Fluid</i></a><br/>
+<a href="https://www.youtube.com/watch?v=xP-Sxfntdb4">Kenny Chesney <i>There Goes My Life</i></a>
+</div>
+<hr/>
+<img src="sendspaace.jpg" width="100%">
+<hr/>
+<span><a href="https://www.nts.live/shows/sendspaace/episodes/sendspaace-10th-may-2021"><i>Listen</i></a></span>
+<p>Selected by <i>J W</i></p>
+<hr/>
+<hr/>
+<div id="archives"></div>
+<hr/>
+</div>
+<div id="play">
+</div>
+</body>
+</html>

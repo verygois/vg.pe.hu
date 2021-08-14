@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>｣ﾚ ｨ ﾉヾ ─ 廾 ｽ</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<style>
+html {font-size: 322%;font-family: 'Yu Mincho',cursive ;}
+body {
+background-image: url("http://78.media.tumblr.com/05c97af2e8e88fd1e8a76d6d6977dd5b/tumblr_otp95yz3kr1ureo00o2_r1_1280.jpg");
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat
+}
+a { color: #00a892;
+    text-shadow: 2px 2px 2px ,
+    -2px 2px 0px #701f99,
+    2px -2px 2px #ffbb33,
+    -2px -2px 0px #ffbb33;
+text-decoration: none;
+}
+#title{ position: relative; z-index: 10; margin: 0 10%;}
+#act{ color: #ffbb33; top: 10%; right: 22%;
+    text-shadow: 2px 2px 2px #701f99,
+    -2px 2px 0px #00a892,
+    2px -2px 2px #00a892,
+    -2px -2px 0px #eee;
+}
+#info{padding: 2% 5%;}
+#text {width: 50%; height: 1000px; color: #FFF;
+    text-shadow: 2px 2px 2px #ddd,
+    -2px 2px 0px #eee,
+    2px -2px 2px #eee,
+    -2px -2px 0px #eee;
+margin: 0 22%
+}
+
+.buy{font-size: 10vw;}
+.tt{font-size: 50%;}
+li {margin: 0;position: fixed;top: 25%; list-style-type: none;}
+section { height: 1000px;}
+</style>
+</head>
+<body>
+<div id="title">
+<p><b><span id="ss">
+<div class="shake-little shake-constant shake-constant--hover">｣</div>
+<div class="shake-crazy shake-constant shake-constant--hover">ﾚ </div>
+<div class="shake shake-constant shake-constant--hover">ｨ </div>
+<div class="shake-hard shake-constant shake-constant--hover">ﾉ</div>
+<div class="shake-chunk shake-constant shake-constant--hover">ヾ</div>
+<div class="shake-vertical shake-constant shake-constant--hover">─</div>
+<div class="shake-slow shake-constant shake-constant--hover">廾</div>
+<div class="shake-horizontal shake-constant shake-constant--hover"> ｽ</div>
+  </span></b></p>
+</div>
+<section>
+  <ul>
+    <li id="text">
+<p class="tt"><br />｣ ﾚ ｨ ﾉ ヾ ─ 廾 ｽ　オフィシャルフィンガーバンド<br/>
+illustration by <a href="https://www.instagram.com/nanoooook/" target="_blank">nanook</a><br />
+<br /><br /><br />500JPN (+shipping cost)　<a class="buy" href="https://verygois.bandcamp.com/merch/--2" target="_blank">BUY</a></p>
+    </li>
+    <li id="info">
+<p><b> 📅 </b>22th March, 2017<br /><b> 🕗 </b>19:30 ~<br /><b> 🏠 </b><a href="http://forestlimit.com/fl/?page_id=16" target="_blank">Forestlimit</a> (Hatagaya, Tokyo)<br /><b> 💴 </b>￥1000 (with 1 drink)<br /></p>
+    </li>
+    <li id="act">
+<p><b> act</b><br /><a href="https://twitter.com/y_kawasome" target="_blank">川染喜弘</a><br /><a href="https://twitter.com/hottroche" target="_blank">&#23567;&#26519;&#20142;&#24179;</a><br /><a href="https://twitter.com/emamouse" target="_blank">emamouse</a><br /><a href="https://twitter.com/AD250000000" target="_blank">fri珍</a><br /><a href="https://twitter.com/toplessdeath" target="_blank">脳BRAIN</a><br /><a href="https://twitter.com/513gwave" target="_blank">51.3 G-WAVE</a></p>
+    </li>
+  </ul>
+</section>
+共催：NOVO！・K/A/T/O MASSACRE
+</body>
+<script>
+$(function(){
+    $(window).scroll(function(){
+    var y = $(this).scrollTop();
+    var scale1 = y * 0.001 + 0.1;
+    $("#act").css('transform','scale(' + scale1 + ')');
+    var scale2 = y * (-0.001) + 2;
+    $("#text").css('transform','scale(' + scale2 + ')');
+    var scale3 = y * (-0.001) + 0.5;
+    $("#").css('transform','scale(' + scale3 + ')');
+    var rotate1 = y * (-0.001) + 1.0;
+    $("#info").css('transform','rotate(' + y + 'deg) scale(' + rotate1 + ')');
+    });
+});
+</script>
+
+<link rel="stylesheet" type="text/css" href="csshake.min.css">
+<!-- or from surge.sh -->
+<link rel="stylesheet" type="text/css" href="http://csshake.surge.sh/csshake.min.css">
+</html>

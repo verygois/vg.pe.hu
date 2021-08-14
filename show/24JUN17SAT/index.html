@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>#24JUN17SAT</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style type="text/css">
+
+body {
+    overflow-x:hidden;
+    width: 100%;
+}
+.top {
+	font-size: 1vw;
+	line-height:200%;
+	background-color: #fff;
+	position: fixed;
+	width: 95%;
+	top: 0; left: 0;
+	z-index: 100;
+	padding: 0.5% 2.5%;
+	font-family: 'Yu Mincho', YuMincho, serif;
+}
+a {
+	padding: 0.5% 1%;
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	color:#000;
+	background-color: gold;
+}
+
+img { padding: 1.5%; }
+
+#vrview iframe {
+  pointer-events: none;
+  position: fixed;
+  top: 0; left: 0;
+  width:100%; height:100%;
+  border:none;
+}
+#about {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  font-family: 'ＭＳ 明朝';
+}
+.close_overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    text-indent: -9999px;
+    position: absolute;
+    background: #ccc;
+    opacity: 0.5;
+    z-index: 5;
+}
+.modal_window {
+    width: 90%;
+    top:0; left:0;
+    text-align: center;
+    display: block;
+    position: absolute;
+    z-index: 10;
+    padding : 10% 5% 5% ;
+}
+/* CSS3 ModalWindow SET
+-------------------------- */
+@-webkit-keyframes modalFadeIn {
+    0% {opacity:0;display:block;}
+    100% {opacity:1;}
+}
+
+div#modal div:target {
+    -webkit-animation-name: modalFadeIn;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: 1;
+    display:block;
+}
+#vrview iframe { position: fixed; top: 0; left: 0; width:100%; height:100%; border:none; }
+</style>
+<script src="//storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
+</head>
+<body>
+<div class="top">
+<a><b>#24JUN17SAT</b></a>
+<a>biki (peformance)</a>
+<a>神田聡 (peformance)</a>
+<a>直嶋岳史 (peformance)</a>
+<a>0100011110001 (online)</a>
+<a>Cy Fan (drawing/sounds)</a>
+<a>Rockrototante (objects/sounds)</a>
+<a>高見澤優海 (painting)</a>
+<a>趙里奈 (painting)</a>
+<a>Offbeat rats (shop)</a>
+</div>
+
+<div id="modal">
+<div id="about">
+<a href="#" class="close_overlay">×</a>
+<div class="modal_window">
+<h1>#24JUN17SAT</h1>
+<p><br /></p>
+<p>
+ID/Pass is included in</p>
+<a class="close" href="http://vg.pe.hu/compilation/04/">Very Gois #04</a>
+<p><br /></p>
+<h1><a class="close" href="vr/">Enter </a></h1>
+<p><br /></p>
+</div>
+</div>
+</div>
+
+<div id="vrview"></div>
+<script>
+        var vrView;
+        window.addEventListener('load', onVrViewLoad)
+        function onVrViewLoad(){
+            vrView = new VRView.Player('#vrview', {
+                image: '//raw.githubusercontent.com/kazumasasajima/vrview/master/360/24JUN17SAT/22_04.jpg',
+            });
+        }
+</script>
+</body>
+</html>
