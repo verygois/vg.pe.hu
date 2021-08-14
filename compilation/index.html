@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="icon" href="/cv/logo.png">
+<link rel="stylesheet" type="text/css" href="/css/ctlg.css"/>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+$("#001").load("/compilation/01/click.html");
+$("#002").load("/compilation/02/click.html");
+$("#003").load("/compilation/03/click.html");
+$("#004").load("/compilation/04/click.html");
+})
+</script>
+<title>Compilation | Very Gois</title>
+<style type="text/css">
+#cover {
+  position:relative;
+  z-index: -1;
+  top:0; left:0;
+  display:block;
+  user-select: none;
+  pointer-events:none;
+  width:100%;
+  height:90vh;
+}
+#ctlg {
+  font-family: 'Lucida Console', Courier, monospace;
+  position:relative;
+  margin: 2.5% auto;
+  width:95%;
+  max-width: 950px;
+}
+</style>
+</head>
+<body>
+<div id="cover">
+<h1><span>VG CTLG</span></h1>
+</div>
+<div id="ctlg">
+<p id="sub"><b>Compilation</b></p>
+<div id="004"></div>
+<div id="003"></div>
+<div id="002"></div>
+<div id="001"></div>
+</div>
+</body>
+</html>
