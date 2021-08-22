@@ -71,9 +71,10 @@ $("#menu").load("/cv/menu.html");
   text-decoration:none;
   pointer-events: none;
 }
-.list li:hover {
-  transform:scale(1 1.25)
-}
+.list p {
+  width:100%;
+  padding:2.5% 0 5%;
+ }
 </style>
 </head>
 <body>
