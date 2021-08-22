@@ -45,10 +45,9 @@ $("#menu").load("/cv/menu.html");
 <link rel="stylesheet" type="text/css" href="/jp/cm/cv/greating.css"/>
 <style type="text/css">
 #org h1,
-.list .date,
-.list .title
-{font-family:;}
 .list .date {
+    font-family:'Great Vibes', cursive;
+  transform:scale(1,10);
   font-size:100%;
   padding:0 2.5% 0 0;
   width:20%;
@@ -57,6 +56,7 @@ $("#menu").load("/cv/menu.html");
   pointer-events: none;
 }
 .list .title {
+    font-family: 'Lucida Console', Courier, monospace;
   font-size:125%;
   width:75%;
   right:0;
