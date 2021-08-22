@@ -46,7 +46,7 @@ $("#menu").load("/cv/menu.html");
 <style type="text/css">
 .list .date,
 .list .title {
-    font-family:'Great Vibes', cursive;
+    font-family:'Great Vibes', "MS Mincho", serif, cursive;
  }
 #org,
 #org .reset-button,
