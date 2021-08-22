@@ -27,7 +27,7 @@ $("#links").load("/ctlg/links.php");
 <div id="compilation"></div>
 <div id="march">
 <div id="bio">
-<h3><a href="http://newlifecollection.com/?word=%E5%8D%B8%E8%B2%A9%E5%A3%B2+Wholesale">How to order at wholesale price</a></h3>
+<h3><a href="wholesale.html">How to order at wholesale price</a></h3>
 </div>
 </div>
 <div id="march">
