@@ -1,0 +1,58 @@
+html, body, #menu {height: 100%;}
+
+body {
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#about {
+    position: absolute;
+    z-index: 10;
+    top: 2%;
+    left: 5%;
+}
+#about a {
+color: #000;
+-moz-text-decoration-style: wavy;    /* for Firefox */
+-webkit-text-decoration-style: wavy; /* for Chrome,Safari,Opera */
+-ms-text-decoration-style: wavy;     /* for IE */
+text-decoration-style: wavy;         /* CSS3 */
+background-color: #FFF;
+}
+a:hover {
+background-color: yellow;
+}
+
+#get {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -1.5em;
+    z-index: 10;
+}
+#get a {color: #000; text-decoration: none;}
+
+#play {
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+    right: 0%;
+    text-align: center;
+}
+
+#content {
+    font-size: 1.5vw;
+    width:90vw;
+    position: absolute;
+    padding: 5vw;
+    left: 0%;
+}
+
+#video {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+}
