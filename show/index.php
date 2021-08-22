@@ -109,10 +109,10 @@ $("#menu").load("/cv/menu.html");
 <li>
 <input type="radio" name="tag" value="h" id="h">
 <label for="h" class="label">Completed</label></li>
-<li>
-<input type="reset" name="reset" value="View All" class="reset-button">
-</li>
 </ul>
+</div>
+<div class="reset">
+<input type="reset" name="reset" value="View All" class="reset-button">
 </div>
 </form>
 
