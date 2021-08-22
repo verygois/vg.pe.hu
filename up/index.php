@@ -55,10 +55,8 @@ $("#menu").load("/cv/menu.html");
  }
 #org h1,
 .list .date {
-  font-weight:500;
-  transform:scale(1,2);
   font-size:100%;
-  padding:2.5% 2.5% 0 0;
+  padding:0 2.5% 0 0;
   width:20%;
   display:inline-block;
   float:left;
