@@ -26,115 +26,99 @@ flock($fp, LOCK_UN);
 fclose($fp);
 
 ?>
-<!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" type="text/css" href="/css/calendar.css"/>
-<link rel="stylesheet" type="text/css" href="/css/menu.css"/>
-<link rel="stylesheet" type="text/css" href="/css/welcome.css"/>
-<link rel="stylesheet" type="text/css" href="/css/onmouse.css"/>
-<link rel="icon" href="/cv/logo.png">
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>VG + | Update</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<script src="/jp/cm/show/org.js"></script>
 <script type="text/javascript">
 $(function(){
 $("#menu").load("/cv/menu.html");
 })
 </script>
+<script type="text/javascript">
+</script>
+<link rel="stylesheet" type="text/css" href="/jp/cm/show/book.css"/>
+<link rel="stylesheet" type="text/css" href="/jp/cm/cv/greating.css"/>
 <style type="text/css">
-#calendar h1 {
-  color: #fff;
-  text-shadow: 0 0 0.1vh #000;
-  font-size:10vh;
-  letter-spacing:4.5vw;
-  font-weight:500;
-  font-family:'Great Vibes', cursive;
-  text-align:center;
-  position:fixed;
-  z-index:-1;
-  width:100%;
-  margin:0; padding:0;
-  top: 60%; left: 50%;
-  transform:translate(-50%,-50%);
-  -webkit-transform:translate(-50%,-50%);
-  pointer-events:none;
-  transition:1s all;
+#org h1,
+.list .date,
+.list .title
+{font-family:;}
+.list .date {
+  font-size:100%;
+  padding:0 2.5% 0 0;
+  width:20%;
+  display:inline-block;
+  float:left;
+  pointer-events: none;
 }
-#calendar h1 span {
-  display:block;
-  transform:scale(1,10);
-}
-.news {
+.list .title {
   font-size:125%;
-  line-height: 200%;
-  padding-bottom:1rem;
+  width:75%;
+  right:0;
+  display:inline-block;
+  white-space:nowrap;
+  text-decoration:none;
+  pointer-events: none;
 }
-.news a {
-  text-decoration: none;
-  border:solid 1px;
-  padding:0.5rem;
-  color:#000;
-}
-.news a:hover {
-  color:#fff;
-  background: blue;
-}
-@media screen and (max-width: 720px){
-  #calendar h1 {
-    font-size:15vw;
-    letter-spacing:0;
-  }
-.refine-teims .date {background:transparent;}
+.list li:hover {
+  transform:scale(1 1.25)
 }
 </style>
-<title>VG + | Update</title>
 </head>
 <body>
 <div id="menu"></div>
-<div id="calendar" class="">
-<h1><span>VG +</span></h1>
-<div class="refine">
-  <input id="refine-0" type="radio" name="category" checked><span class="refine-0"><b>✔</b></span>
-  <label class="refine-btn all" for="refine-0">ALL</label>
-  <input id="refine-2" type="radio" name="category" value="b"><span class="refine-2"><b>✔</b></span>
-  <label class="refine-btn b" for="refine-2">Reading</label>
-  <input id="refine-3" type="radio" name="category" value="c"><span class="refine-3"><b>✔</b></span>
-  <label class="refine-btn c" for="refine-3">Listening</label>
-  <input id="refine-4" type="radio" name="category" value="d"><span class="refine-4"><b>✔</b></span>
-  <label class="refine-btn d" for="refine-4">Watching</label>
-  <input id="refine-5" type="radio" name="category" value="e"><span class="refine-5"><b>✔</b></span>
-  <label class="refine-btn e" for="refine-5">Let's Do</label>
-<hr/>
+
+<div id="greating">
+<form id="org">
+<div class="search-box tag">
+<ul>
+<li>
+<input type="radio" name="tag" value="b" id="b">
+<label for="b" class="label">Reading</label></li>
+<li>
+<input type="radio" name="tag" value="c" id="c">
+<label for="c" class="label">Listening</label></li>
+<li>
+<input type="radio" name="tag" value="d" id="d">
+<label for="d" class="label">Watching</label></li>
+<li>
+<input type="radio" name="tag" value="e" id="e">
+<label for="e" class="label">Let's Do</label></li>
+</ul>
+</div>
+<div class="reset">
+<input type="reset" name="reset" value="View All" class="reset-button">
+</div>
+</form>
+
+<ul class="list">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
-<div id="<?=h($row[5])?>" class="refine-teims <?=h($row[4])?>">
-<p class="date"><?=h($row[0])?></p>
-<p class="title"><u><?=h($row[1])?></u></p>
-<marquee class="info" scrollamount="15"><?=h($row[2])?></marquee>
-<a class="link" href="<?=h($row[3])?>"></a>
-</div>
+<li class="list_item list_toggle" data-tag="<?=h($row[4])?>">
+<span>
+  <b class="date"><?=h($row[0])?></b>
+  <u class="title"><?=h($row[1])?></u>
+</span>
+<p><?=h($row[2])?></p>
+<a style="display:<?=h($row[5])?>;" href="<?=h($row[3])?>" target="_blank" rel="noopener noreferrer"></a>
+</li>
 <?php endforeach; ?>
 <?php else: ?>
-<div id="" class="refine-teims">
-<p class="date">Sub</p>
-<p class="title"><u>Title</u></p>
-<marquee class="info" scrollamount="15">information</marquee>
-<a class="link"></a>
-</div>
+<li class="list_item list_toggle">
+<span>
+  <b class="date">Title</b>
+  <u class="title">contents</u>
+</span>
+<p>Information</p>
+<a style="display:none;" class="link" href="" target="_blank" rel="noopener noreferrer"></a>
+</li>
 <?php endif; ?>
-</div>
-<div id="poem"></div>
-</div>
-<a id="onmouse_button" target="_parent">?</a>
-<div id="onmouse">
-<div id="onmouse_open">
-  <p class='news'><a href="http://creative-community.pe.hu/coding/">How to Coding | creative-community.pe.hu</a><br/>
-  ウェブサイトの作り方を紹介するウェブサイトを開設しました。</p>
-</div>
+</ul>
 </div>
 </body>
 </html>
