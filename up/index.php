@@ -49,7 +49,7 @@ $("#menu").load("/cv/menu.html");
     font-family:'Great Vibes', cursive;
   transform:scale(1,2);
   font-size:100%;
-  padding:0 2.5% 0 0;
+  padding:2.5% 2.5% 0 0;
   width:20%;
   display:inline-block;
   float:left;
