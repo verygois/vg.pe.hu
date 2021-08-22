@@ -26,79 +26,119 @@ flock($fp, LOCK_UN);
 fclose($fp);
 
 ?>
-<!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" type="text/css" href="/css/calendar.css"/>
-<link rel="stylesheet" type="text/css" href="/css/menu.css"/>
-<link rel="stylesheet" type="text/css" href="/css/welcome.css"/>
-<link rel="stylesheet" type="text/css" href="/css/onmouse.css"/>
-<link rel="icon" href="/cv/logo.png">
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Direct | Very Gois</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<script src="/jp/cm/show/org.js"></script>
 <script type="text/javascript">
 $(function(){
 $("#menu").load("/cv/menu.html");
 })
 </script>
-<title>Direct | Very Gois</title>
+<script type="text/javascript">
+</script>
+<link rel="stylesheet" type="text/css" href="/jp/cm/show/book.css"/>
+<link rel="stylesheet" type="text/css" href="/jp/cm/cv/greating.css"/>
 <style type="text/css">
+.list .date,
+.list .title {
+    font-family:'Great Vibes', cursive;
+ }
+#org,
+#org .reset-button,
+.list p {
+    font-family: 'Lucida Console', Courier, monospace;
+ }
+#org h1,
+.list .date {
+  font-weight:500;
+  transform:scale(1,2);
+  font-size:100%;
+  padding:2.5% 2.5% 0 0;
+  width:20%;
+  display:inline-block;
+  float:left;
+  pointer-events: none;
+}
+.list .title {
+  font-size:125%;
+  width:75%;
+  right:0;
+  display:inline-block;
+  white-space:nowrap;
+  text-decoration:none;
+  pointer-events: none;
+}
+.list li:hover {
+  transform:scale(1 1.25)
+}
 </style>
 </head>
 <body>
 <div id="menu"></div>
-<div id="calendar" class="">
-<div class="refine">
-  <input id="refine-0" type="radio" name="category" checked><span class="refine-0"><b>✔</b></span>
-  <label class="refine-btn all" for="refine-0">ALL</label>
-  <input  id="refine-1" type="radio" name="category"><span class="refine-1"><b>✔</b></span>
-  <label class="refine-btn a" for="refine-1">Upcoming</label>
-  <input id="refine-7" type="radio" name="category"><span class="refine-7"><b>✔</b></span>
-  <label class="refine-btn g" for="refine-7">Work in Progress</label>
-  <input id="refine-2" type="radio" name="category"><span class="refine-2"><b>✔</b></span>
-  <label class="refine-btn b" for="refine-2">Art</label>
-  <input id="refine-3" type="radio" name="category"><span class="refine-3"><b>✔</b></span>
-  <label class="refine-btn c" for="refine-3">Music</label>
-  <input id="refine-4" type="radio" name="category"><span class="refine-4"><b>✔</b></span>
-  <label class="refine-btn d" for="refine-4"># series</label>
-  <input id="refine-5" type="radio" name="category"><span class="refine-5"><b>✔</b></span>
-  <label class="refine-btn e" for="refine-5">1F</label>
-  <input id="refine-6" type="radio" name="category"><span class="refine-6"><b>✔</b></span>
-  <label class="refine-btn f" for="refine-6">2F</label>
-  <input id="refine-8" type="radio" name="category"><span class="refine-8"><b>✔</b></span>
-  <label class="refine-btn h" for="refine-8">Completed</label>
-<hr/>
 
+<div id="greating">
+<form id="org">
+<div class="search-box tag">
+<ul>
+<li>
+<input type="reset" name="reset" value="View All" class="reset-button">
+</li>
+<li>
+<input type="radio" name="tag" value="a" id="a">
+<label for="a" class="label">Upcoming</label></li>
+<li>
+<input type="radio" name="tag" value="g" id="g">
+<label for="g" class="label">Work in Progress</label></li>
+<li>
+<input type="radio" name="tag" value="b" id="b">
+<label for="b" class="label">Art</label></li>
+<li>
+<input type="radio" name="tag" value="c" id="c">
+<label for="c" class="label">Music</label></li>
+<li>
+<input type="radio" name="tag" value="d" id="d">
+<label for="d" class="label"># series</label></li>
+<li>
+<input type="radio" name="tag" value="e" id="e">
+<label for="e" class="label">1F</label></li>
+<li>
+<input type="radio" name="tag" value="f" id="f">
+<label for="f" class="label">2F</label></li>
+<li>
+<input type="radio" name="tag" value="f" id="f">
+<label for="f" class="label">Completed</label></li>
+</ul>
+</div>
+</form>
+
+<ul class="list">
 <?php if (!empty($rows)): ?>
 <?php foreach ($rows as $row): ?>
-<div id="<?=h($row[5])?>" class="refine-teims <?=h($row[4])?>">
-<p class="date"><?=h($row[0])?></p>
-<p class="title"><u><?=h($row[1])?></u></p>
-<marquee scrollamount="15" class="info"><?=h($row[2])?></marquee>
-<a class="link" href="<?=h($row[3])?>"></a>
-</div>
+<li class="list_item list_toggle" data-tag="<?=h($row[4])?>">
+<span>
+  <b class="date"><?=h($row[0])?></b>
+  <u class="title"><?=h($row[1])?></u>
+</span>
+<p><?=h($row[2])?></p>
+<a style="display:<?=h($row[5])?>;" href="<?=h($row[3])?>" target="_blank" rel="noopener noreferrer"></a>
+</li>
 <?php endforeach; ?>
 <?php else: ?>
-<div id="" class="refine-teims">
-<p class="date">0000.00.00 - 00.00</p>
-<p class="title"><u>Title</u></p>
-<marquee scrollamount="15" class="info">infomation of this event</marquee>
-<a class="link"></a>
-</div>
+<li class="list_item list_toggle">
+<span>
+  <b class="date">Title</b>
+  <u class="title">contents</u>
+</span>
+<p>Information</p>
+<a style="display:none;" class="link" href="" target="_blank" rel="noopener noreferrer"></a>
+</li>
 <?php endif; ?>
-</div>
-</div>
-
-<a id="onmouse_button" target="_parent">?</a>
-<div id="onmouse">
-<div id="onmouse_open">
-このページに、ディレクションを行った展覧会や音楽会を掲載します。<br/>
-<p>2015年から2019年までは主に実際に場を開き、会場に人を集める形式の催しを企画していましたが、2019年以降はインターネットをベースにどこからでも参加することができる催しも企画しています。</p>
-</div>
+</ul>
 </div>
 </body>
 </html>
