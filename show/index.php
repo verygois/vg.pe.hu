@@ -72,8 +72,8 @@ $("#menu").load("/cv/menu.html");
   pointer-events: none;
 }
 .list p {
-  width:100%;
-  padding:2.5% 0 5%;
+  width:75%;
+  float:right;
  }
 </style>
 </head>
