@@ -71,6 +71,10 @@ $("#menu").load("/cv/menu.html");
   text-decoration:none;
   pointer-events: none;
 }
+.list li:hover {
+  color:#fff;
+  text-shadow:0.1rem 0.1rem #000;
+}
 .list p {width:77.5%; float:right;}
 </style>
 </head>
