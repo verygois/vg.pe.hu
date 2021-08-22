@@ -86,9 +86,6 @@ $("#menu").load("/cv/menu.html");
 <div class="search-box tag">
 <ul>
 <li>
-<input type="reset" name="reset" value="View All" class="reset-button">
-</li>
-<li>
 <input type="radio" name="tag" value="b" id="b">
 <label for="b" class="label">Reading</label></li>
 <li>
@@ -100,6 +97,9 @@ $("#menu").load("/cv/menu.html");
 <li>
 <input type="radio" name="tag" value="e" id="e">
 <label for="e" class="label">Let's Do</label></li>
+<li>
+<input type="reset" name="reset" value="View All" class="reset-button">
+</li>
 </ul>
 </div>
 </form>
