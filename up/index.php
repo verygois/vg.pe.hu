@@ -48,6 +48,8 @@ $("#menu").load("/cv/menu.html");
 .list .title {
     font-family:'Great Vibes', cursive;
  }
+#org,
+#org .reset-button,
 .list p {
     font-family: 'Lucida Console', Courier, monospace;
  }
