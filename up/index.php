@@ -44,9 +44,16 @@ $("#menu").load("/cv/menu.html");
 <link rel="stylesheet" type="text/css" href="/jp/cm/show/book.css"/>
 <link rel="stylesheet" type="text/css" href="/jp/cm/cv/greating.css"/>
 <style type="text/css">
+.list .date,
+.list .title {
+    font-family:'Great Vibes', cursive;
+ }
+.list p {
+    font-family: 'Lucida Console', Courier, monospace;
+ }
 #org h1,
 .list .date {
-    font-family:'Great Vibes', cursive;
+  font-weight:500;
   transform:scale(1,2);
   font-size:100%;
   padding:2.5% 2.5% 0 0;
@@ -56,7 +63,6 @@ $("#menu").load("/cv/menu.html");
   pointer-events: none;
 }
 .list .title {
-    font-family: 'Lucida Console', Courier, monospace;
   font-size:125%;
   width:75%;
   right:0;
