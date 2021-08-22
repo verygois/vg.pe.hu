@@ -47,7 +47,7 @@ $("#menu").load("/cv/menu.html");
 #org h1,
 .list .date {
     font-family:'Great Vibes', cursive;
-  transform:scale(1,10);
+  transform:scale(1,1.25);
   font-size:100%;
   padding:0 2.5% 0 0;
   width:20%;
