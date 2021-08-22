@@ -71,7 +71,7 @@ $("#menu").load("/cv/menu.html");
   text-decoration:none;
   pointer-events: none;
 }
-.list p {width:75%; float:right;}
+.list p {width:77.5%; float:right;}
 </style>
 </head>
 <body>
