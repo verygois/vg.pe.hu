@@ -73,7 +73,6 @@ $("#menu").load("/cv/menu.html");
 }
 .list li:hover {
   color:#fff;
-  background:#ccc;
   text-shadow:0.1rem 0.1rem #000;
 }
 .list p {width:77.5%; float:right;}
