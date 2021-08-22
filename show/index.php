@@ -72,7 +72,7 @@ $("#menu").load("/cv/menu.html");
   pointer-events: none;
 }
 .list p {
-  width:75%;
+  width:80%;
   float:right;
  }
 </style>
