@@ -6,6 +6,11 @@ body {
 .none {
   display:none;
 }
+#portrait img,
+.title {
+  user-select:none;
+  pointer-events:none;
+}
 
 #portrait img,
 .infomation {
@@ -13,11 +18,14 @@ body {
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
 }
-#portrait img,
-.title {
-  user-select:none;
-  pointer-events:none;
+#who,
+.infomation {
+  font-family: "SimSong", "MS Mincho", selif;
+  font-stretch: condensed;
+  font-variant: common-ligatures tabular-nums;
+  letter-spacing: -0.1vw;
 }
+
 #portrait {
   position: fixed;
   top:0; left:0;
@@ -35,10 +43,6 @@ body {
   position: fixed;
   top:2rem; left:0;
   width:100%;
-  font-family: "SimSong", "MS Mincho", selif;
-  font-stretch: condensed;
-  font-variant: common-ligatures tabular-nums;
-  letter-spacing: -0.1vw;
 }
 .title {
   width:75%;
