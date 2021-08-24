@@ -113,12 +113,12 @@ li {list-style: none;}
   font-size:1.5rem;
   text-align:center;
   padding:0.5rem 0;
-  margin:0.5rem 0;
+  margin:0.5rem auto;
   background: #fff;
   cursor: pointer;
   border:1px solid #000;
   border-radius:1vw;
-  width:100%;
+  width:85%;
   transition:1s all;
 }
 .reset-button:hover,
