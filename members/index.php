@@ -7,7 +7,6 @@ $name = (string)filter_input(INPUT_POST, 'name');
 $profile = (string)filter_input(INPUT_POST, 'profile');
 $language = (string)filter_input(INPUT_POST, 'language');
 $status = (string)filter_input(INPUT_POST, 'status');
-$questions = (string)filter_input(INPUT_POST, 'questions');
 
 $fp = fopen('index.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -84,8 +83,7 @@ $("#").load("");
 <span id="<?=h($row[0])?>" class="text" style="display:none; clear:both;">
 <i id="profile"><?=h($row[2])?></i>
 <p class="buy">
-<a style="display:<?=h($row[5])?>;" href="http://ichoose.pe.hu/<?=h($row[5])?>" target="_blank" rel="noopener noreferrer">10Q</a>
-<a href="http://newlifecollection.com/?word=<?=h($row[0])?>" target="_blank" rel="noopener noreferrer">collection</a>
+<a href="/members/<?=h($row[0])?>" target="_blank" rel="noopener noreferrer">View More</a>
 </p>
 </span>
 </li>
@@ -95,8 +93,7 @@ $("#").load("");
 <span>Name</span>
 <span id="<?=h($row[0])?>" class="text" style="display:none; clear:both;">
 <i id="profile">Profile</i>
-<p class="<?=h($row[5])?>"><a href="http://ichoose.pe.hu/<?=h($row[5])?>" target="_blank" rel="noopener noreferrer">10Q</a></p>
-<p class="buy"><a href="http://newlifecollection.com/?word=<?=h($row[0])?>" target="_blank" rel="noopener noreferrer">see more</a></p>
+<a href="/members/<?=h($row[0])?>" target="_blank" rel="noopener noreferrer">View More</a>
 </span>
 </li>
 <?php endif; ?>
