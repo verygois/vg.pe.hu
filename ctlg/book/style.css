@@ -153,6 +153,11 @@ body {
   animation: gradientBG 5s ease infinite;
 }
 
+.back {
+  position: fixed;
+  top:2rem; right:2rem;
+}
+
 .popup {
   position:fixed;
   z-index:100;
