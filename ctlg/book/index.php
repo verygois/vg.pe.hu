@@ -83,7 +83,7 @@ $("#").load("");
 <span id="<?=h($row[0])?>" class="text" style="display:none; clear:both;">
 <i id="profile"><?=h($row[2])?></i>
 <p class="buy">
-<a href="/ctlg/book/<?=h($row[0])?>" target="_blank" rel="noopener noreferrer">View More</a>
+<a href="/ctlg/book/<?=h($row[0])?>">View More</a>
 </p>
 </span>
 </li>
@@ -93,7 +93,7 @@ $("#").load("");
 <span>Name</span>
 <span id="<?=h($row[0])?>" class="text" style="display:none; clear:both;">
 <i id="profile">Profile</i>
-<a href="/ctlg/book/<?=h($row[0])?>" target="_blank" rel="noopener noreferrer">View More</a>
+<a href="/ctlg/book/<?=h($row[0])?>">View More</a>
 </span>
 </li>
 <?php endif; ?>
