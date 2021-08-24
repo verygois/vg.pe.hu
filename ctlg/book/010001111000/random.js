@@ -1,6 +1,8 @@
 const random = [
-  "/ctlg/book/___/001.jpg",
-  "/ctlg/book/___/002.jpg"
+    "/ctlg/book/010001111000/001.jpg",
+    "/ctlg/book/010001111000/002.jpg",
+    "/ctlg/book/010001111000/003.jpg",
+    "/ctlg/book/010001111000/004.jpg"
   ];
   
   function randomImg(randomArray) {
