@@ -7,12 +7,11 @@ $name = (string)filter_input(INPUT_POST, 'name');
 $profile = (string)filter_input(INPUT_POST, 'profile');
 $language = (string)filter_input(INPUT_POST, 'language');
 $status = (string)filter_input(INPUT_POST, 'status');
-$questions = (string)filter_input(INPUT_POST, 'questions');
 
 $fp = fopen('index.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$id, $name, $profile, $language, $status, $questions,]);
+    fputcsv($fp, [$id, $name, $profile, $language, $status,]);
     rewind($fp);
 }
 

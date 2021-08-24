@@ -11,7 +11,7 @@ $status = (string)filter_input(INPUT_POST, 'status');
 $fp = fopen('index.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
-    fputcsv($fp, [$id, $name, $profile, $language, $status, $questions,]);
+    fputcsv($fp, [$id, $name, $profile, $language, $status,]);
     rewind($fp);
 }
 
