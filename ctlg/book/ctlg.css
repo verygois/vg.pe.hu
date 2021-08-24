@@ -98,7 +98,6 @@ body {
   font-size: 125%;
   font-family: 'Times New Roman', serif;
   padding: 1rem;
-  display:inline-block;
 }
 .infomation .click:hover {
   color:#fff;
