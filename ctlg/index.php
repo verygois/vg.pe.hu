@@ -9,8 +9,9 @@
 <script type="text/javascript">
 $(function(){
 $("#menu").load("/cv/menu.html");
-$("#compilation").load("/compilation/");
 $("#book").load("/ctlg/book/");
+$("#compilation").load("/compilation/");
+$("#one").load("/1f/new.html");
 })
 </script>
 <link rel="icon" href="/cv/logo.png">
@@ -19,6 +20,8 @@ $("#book").load("/ctlg/book/");
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 <style type="text/css">
+.archives {display:none;}
+.ctlg {display:inline-block;}
 </style>
 </head>
 <body>
@@ -27,6 +30,7 @@ $("#book").load("/ctlg/book/");
 <div id="compilation"></div>
 <div id="march">
 <h3><a href="wholesale.html">How to order at wholesale price</a></h3>
+<div id="one"></div>
 <b>Merchandise</b>
 <a href="/show/galfy/">Galfy</a>
 <a href="/show/lv/">Louis Versus</a>
