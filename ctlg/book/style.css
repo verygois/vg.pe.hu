@@ -115,6 +115,40 @@ body {
   border-radius: 1rem;
   background-color:rgba(255,255,255,0.55);
 }
+.infomation p b {
+  color:#fff;
+  text-shadow: #000 1px 1px;
+  font-family: "Great Vibes", cursive;
+  transform: scale(0.5,2);
+  display:inline-block;
+  margin-bottom:1rem;
+  font-size: 1rem;
+  line-height:200%;
+}
+.infomation p a {
+  display:inline-block;
+  letter-spacing: -0.2vw;
+  word-spacing: -.2ch;
+  line-height:150%;
+  padding: 0 0.5rem;
+  margin:0.1rem;
+  text-decoration:none;
+  background: linear-gradient(
+-90deg
+, #fff, #ccc, #aaa);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.infomation p a:hover {
+  background: linear-gradient(
+-90deg
+, #fff, #ccc, #aaa);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  -webkit-text-fill-color: #000;
+}
 
 .nlc {
   position: fixed;
