@@ -1,176 +1,243 @@
-<!DOCTYPE HTML>
+
+<!DOCTYPE html>
 <html>
 <head>
 <title>怒羅権｜Dragon</title>
-<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
-<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <style type="text/css">
-.top {font-size: 1.5vw; background-color: #BE0032 ; line-height: 1.5em; position: fixed; width: 100%; top: 0; left: 0; z-index: 100; padding: 0.5% 2%; font-family: 'Yu Mincho', YuMincho, serif; }
-.top a{ padding: 0.5% 1%; color: #000; text-decoration: none;}
-#vrview iframe { position: fixed; top: 0; left: 0; width:100%; height:100%; border:none; }
-a { color: #000; text-decoration: none; }
-A:hover { color: ; background-color: gold; }
-h1 { font-size: 3vw;}
-.close { background-color: #fff; font-size: 3vw; }
-.price { color: #BE0032; background-color: gold; }
-.price A:hover { color: gold; background-color: #BE0032; padding: 0% 1%;}
-#anne,
-#idei,
-#ohiana,
-#jon,
-#tokiyoshi,
-#minamida {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    position: absolute;
-  font-family: 'ＭＳ 明朝';
+html { background-color: #BE0032 ;
+  font-family: 'Yu Mincho', YuMincho, serif;
+  font-size: 130%; letter-spacing: 0.1em;
+  overflow-x: hidden;}
+
+#dragon {
+  position: relative;
+  margin: 0 10%;
+font-size: 800%;
+color: black;
+font-weight: normal;
+text-align: center;
+}
+#hoshi {
+display: inline-block;
+  margin: 0 10%;
+font-size: 800%;
+font-weight: normal;
+color: yellow;
+}
+.hikari {
+font-family: 'ＭＳ 明朝';
+  display: inline-block;
+  font-size: 300%;
+  -webkit-animation: horizontal2 2.0s ease-in-out infinite alternate;
+}
+#venue {
+  position: absolute;
+  top: 0.8em;
+  right: 10%;
+  font-size: 100%;
+  z-index: 1;
+  text-align: right;
+color: blak;
+  -webkit-animation: horizontal1 1.3s ease-in-out infinite alternate;
+}
+img.middle { vertical-align: middle; }
+
+.name {
+display: inline-block;
+  font-size: 130%;
+font-weight: normal;
+}
+.yellow {
+font-family: 'ＭＳ 明朝';
+display: inline-block;
+  margin: 0 10%;
+padding-left: 13%;
+  font-size: 130%;
+font-weight: normal;
+color: yellow;
 }
 
-#contents {
-    margin: 0 auto;
-    width: 100%;
+div {
+  -webkit-animation: horizontal1 1.3s ease-in-out infinite alternate;
 }
 
-.close_overlay {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    display: block;
-    text-indent: -9999px;
-    position: absolute;
-    background: #ccc;
-    opacity: 0.5;
-    z-index: 5;
+#anne {
+  position: absolute;
+  right: 13%;
+  Width: 50%;
+  text-align: right;
+  -webkit-animation: horizontal1 1.3s ease-in-out infinite alternate;
 }
-.modal_window {
-    width: 90%;
-    height: 80%;
-    top: 10%;
-    left: 5%;
-    text-align: center;
-    display: block;
-    position: absolute;
-    z-index: 10;
-  padding-bottom : 5% ;
+#idei {
+  position: absolute;
+  right: 5%;
+  Width: 40%;
+  -webkit-animation: horizontal1 1.3s ease-in-out infinite alternate;
 }
-/* CSS3 ModalWindow SET
--------------------------- */
-@-webkit-keyframes modalFadeIn {
-    0% {opacity:0;display:block;}
-    100% {opacity:1;}
+#anal {
+  position: absolute;
+  right: 10%;
+  Width: 40%;
+  -webkit-animation: horizontal1 1.3s ease-in-out infinite alternate;
+}
+#jon {
+  position: absolute;
+  right: 5%;
+  Width: 38%;
+  -webkit-animation: horizontal1 1.3s ease-in-out infinite alternate;
+}
+#akina {
+  position: absolute;
+  right: 15%;
+  Width: 44%;
+  -webkit-animation: horizontal1 1.3s ease-in-out infinite alternate;
+}
+#shingo {
+  position: absolute;
+  right: 10%;
+  Width: 40%;
+  -webkit-animation: horizontal1 1.3s ease-in-out infinite alternate;
 }
 
-div#modal div:target {
-    -webkit-animation-name: modalFadeIn;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-iteration-count: 1;
-    display:block;
+#AA {
+  overflow-x: auto;
+  position: relative;
+  z-index: 10;
+  top: 1em;
+  Width: 70%;
+  height: 20em;
+  margin: 0 15%;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+#venue a, #AA a {
+color: #000; text-decoration: none;
+  -webkit-animation: vertical 2.0s ease-in-out infinite alternate;
+}
+
+.artists {
+  Width: 60%;
+  margin: 13% 40% 0% 5%;
+  font-size: 88%;
+font-weight: normal;
+  -webkit-animation: horizontal2 2.0s ease-in-out infinite alternate;
+}
+
+.info {
+  position: relative;
+  margin: 10% 0% 0% 0%;
+  float:right;
+  Width: 30%;
+  font-size: 77%;
+font-weight: normal;
+  -webkit-animation: vertical 0.8s ease-in-out infinite alternate;
+}
+.info a, .artists a {
+color: #000;
+-moz-text-decoration-style: wavy;    /* for Firefox */
+-webkit-text-decoration-style: wavy; /* for Chrome,Safari,Opera */
+-ms-text-decoration-style: wavy;     /* for IE */
+text-decoration-style: wavy;         /* CSS3 */
+}
+
+@-webkit-keyframes horizontal1 {
+  0% {
+    -webkit-transform: translateX(8px);
+  }
+  100% {
+    -webkit-transform: translateY(8px);
+  }
+}
+@-webkit-keyframes horizontal2 {
+  0% {
+    -webkit-transform: translateY(-8px);
+  }
+  100% {
+    -webkit-transform: translateY(13px);
+  }
+}
+@-webkit-keyframes vertical {
+  0% {
+    -webkit-transform: translateX(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(11px);
+  }
 }
 </style>
-<script src="//storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
-
 </head>
 <body>
-<div id="contents">
-<div class="top">
-<a href="about.html"><b>怒羅権｜Dragon</b></a> <a class="name" href="#anne">Anne &Ouml;hrling Dersen</a> <a class="name" href="#idei">Yoshihiko Idei</a> <a class="name" href="#ohiana">Ohiana</a> <a class="name" href="#jon">Jon Vaughn</a> <a class="name" href="#tokiyoshi">Akina Tokiyoshi</a> <a class="name" href="#minamida">Shingo Minamida</a></div></div>
-
-<div id="modal">
-<div id="anne">
-<a href="#" class="close_overlay">×</a>
-<div class="modal_window">
-<img src="https://68.media.tumblr.com/b63c975ce6f0d13bac672b5e86d32bb1/tumblr_ov8w3vcbde1w0wfbzo4_r1_1280.jpg" width="100%">
-<h1 class="price">Pre-agricultural Fitness<br /></h1><br />
-<img src="https://68.media.tumblr.com/80c7a8c13af862aa85ffa94130711825/tumblr_ov8w3vcbde1w0wfbzo3_r1_1280.jpg" width="100%"><h1 class="price">Potpunk<br /></h1><br />
-<img src="https://68.media.tumblr.com/9a6df4ef6a217d97383d85ffc8b38a5e/tumblr_ov8w3vcbde1w0wfbzo2_r1_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/68e6a471616d25104ac798e4d9f0aa36/tumblr_ov8w3vcbde1w0wfbzo1_1280.jpg" width="100%"><br />
-<p><a class="close" href="#">【×】CLOSE</a><br /></p>
-</div>
-</div>
-
-<div id="idei">
-<a href="#" class="close_overlay">×</a>
-<div class="modal_window">
-<img src="https://68.media.tumblr.com/d289ce2efce7d2e962aa5b1604b2bc5e/tumblr_ov8vpwDDi31w0wfbzo2_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/c93635859fa4c6c53c1b06ada8ac71b0/tumblr_ov8vpwDDi31w0wfbzo3_r1_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/142c277460f0ed0d0c9609516a61357e/tumblr_ov8vpwDDi31w0wfbzo5_r1_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/f6b137dc1fcb54934952fc6b8e6a2053/tumblr_ov8vpwDDi31w0wfbzo7_r1_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/8208ae12223edd29b666cbfd73272fb5/tumblr_ov8vpwDDi31w0wfbzo6_r1_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/4ca1a419ce25491983636c59642b3c26/tumblr_ov8vpwDDi31w0wfbzo1_r1_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/73d7ea42badd146df0b87144c8eb27bb/tumblr_ov8vpwDDi31w0wfbzo4_r1_1280.jpg" width="100%"><br />
-  <h1 class="price"><a href="https://suzuri.jp/idei000sports">more</a></h1><br />
-<p><br /><a class="close" href="#">【×】CLOSE</a><br /></p>
-</div>
+<span id="venue"><a class="hikari" href="https://www.the-hikari.com/">大 <img src="http://nnnnnnnnnnnnn.web.fc2.com/10g/dragon/the_hikari.png" class="middle" width="130" /> 阪</a>
+<p>August 13 &ndash; August 20, 2017<br />Open : 1 PM &ndash; 8 PM</p></span>
+<a id="hoshi">★</a>
+<p class="yellow">Group Exhibition: Name is "Dragon"<br /></p>
+<p><marquee id="dragon" behavior="alternate" direction="up"><marquee>怒　羅　権</marquee></marquee></p>
+<div id="AA">
+<p>Anne &Ouml;hrling Dersen</p>
+<a class="name" href="http://imnotmessyimcreative.eu/">アン・オーリング・デルセン</a>
+<p>Yoshihiko Idei</p>
+<a class="name" href="http://sssfi.tumblr.com/">出射良彦</a>
+<p>Ohiana</p>
+<a class="name" href="https://ohi-ana.tumblr.com">おひアナ</a>
+<p>Jon Vaughn</p>
+<a class="name" href="http://jonvaughn.ca/">ジョン・ボーン</a>
+<p>Akina Tokiyoshi</p>
+<a class="name" href="https://tokiyoshia-blog-blog.tumblr.com/">時吉あきな</a>
+<p>Shingo Minamida</p>
+<a class="name" href="http://shingominamida.tumblr.com/">南田真吾</a>
 </div>
 
-<div id="ohiana">
-<a href="#" class="close_overlay">×</a>
-<div class="modal_window">
-<img src="https://68.media.tumblr.com/e8f42ce7e9c1630ce2b7b3ac74d8fc5c/tumblr_ov8vo8BjQ01w0wfbzo1_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/43033d5b63b7974fc89711ed0e30bb66/tumblr_ov8vo8BjQ01w0wfbzo3_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/038f351a3ab8338df19209f3446ca68b/tumblr_ov8vo8BjQ01w0wfbzo2_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/c67c108087f2d5f96c4b5c84474bb62c/tumblr_ov8vo8BjQ01w0wfbzo4_r1_1280.jpg" width="100%"><br />
-<p><br /><a class="close" href="#">【×】CLOSE</a><br /></p>
-</div>
+<div class="info">
+<p><u class="name">怒羅権｜Dragon</u></p>
+  <p>会場 | Venue<br /><a href="https://www.the-hikari.com/">The 光 | The hikari</a></p>
+<p>会期 | Date(s)<br />2017年8月13日(日) - 20日(日)<br />August 13 &ndash; August 20, 2017<br />13:00 - 20:00</p>
+<p>住所 | Address<br /><a href="https://goo.gl/maps/HLpBMtR8rjF2">大阪市北区西天満4丁目8-1<br />4-8-1, Temma, Kita-ku Osaka-shi, Osaka, 530-0043, Japan</a></p>
+
+<br/>
+<br/>
+
+  <p><u>オープニング・イベント | Opening event</u></p>
+  <p>日時 | Date<br />2017年8月13日(日) | Sunday, August 13<br/>15:00 - 20:00</p>
+  <p>出演：グレムリン筋肉、スポーツガーデンひ、MERALLDIS、南大輔(ソロ)、ＤＪ商品説明、おひアナ、他</p>
+  <p>投げ銭制</p>
+<br/>
+<br/>
+
+  <p><u>関連イベント</u></p>
+  <p>南田真吾 exhibition「運動」</p>
+  <p>会場 | Venue<br /><a href="http://pulpspace.org/">Pulp</a></p>
+<p>会期 | Date(s)<br />2017年8月11日(金・祝) - 20日(日)<br />August 11 &ndash; August 20, 2017<br />13:00 - 20:00</p>
+<p><a href="http://pulpspace.org/post/163787376254">more info</a></p>
+<br/>
+  <p>A.C.C 2nd Exhibition in Osaka</p>
+  <p>会場 | Venue<br /><a href="https://twitter.com/mineral_osaka">MINERAL OSAKA</a></p>
+<p>会期 | Date(s)<br />2017年8月19日(土) - 20日(日)<br />August 19 &ndash; August 20, 2017<br />13:00 - 20:00</p>
+<p><a href="https://twitter.com/ohianadangerous/status/893793339409014785">more info</a></p>
 </div>
 
-<div id="jon">
-<a href="#" class="close_overlay">×</a>
-<div class="modal_window">
-<img src="https://68.media.tumblr.com/0b01b4eac702658ee3d7ca9f6f0971b1/tumblr_ov8vmsd8Sz1w0wfbzo2_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/d8732a12e0ed46d8411ff4d2db71869f/tumblr_ov8vmsd8Sz1w0wfbzo3_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/4d122dc3a71129843ff4fdee1d5fcf03/tumblr_ov8vmsd8Sz1w0wfbzo4_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/4569124f6e95abb7ec60711b5057e766/tumblr_ov8vmsd8Sz1w0wfbzo5_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/009086612f05a9a3e89ae2cddd2b8126/tumblr_ov8vmsd8Sz1w0wfbzo6_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/d1228426509c1cb60b285f00d31ecd0e/tumblr_ov8vmsd8Sz1w0wfbzo1_1280.jpg" width="100%"><br />
-<p><a class="close" href="#">【×】CLOSE</a><br /></p>
-</div>
-</div>
+<p class="artists" onmouseover="document.all.item('anne').style.visibility='visible'" onmouseout="document.all.item('anne').style.visibility='hidden'">
+<b class="yellow">アン・オーリング・デルセン | Anne &Ouml;hrling Dersen</b><br />スウェーデン出身、現在アムステルダム（NL）とイェーテボリ（SE）を拠点に活動するビジュアルアーティスト・サウンドメーカー<br/><a href="https://www.instagram.com/your_experimental_spouse/" target="_blank">https://www.instagram.com/your_experimental_spouse/</a></p>
+<p class="artists" onmouseover="document.all.item('idei').style.visibility='visible'" onmouseout="document.all.item('idei').style.visibility='hidden'">
+<b class="yellow">出射良彦 | Yoshihiko Idei</b><br />1992年10月28日生まれ、大阪在住。2010年より「KK manga」、2015年よりソロ名義「走る凶器　暴走族のバイク」としてもたまに活動→「もしもし99」に改名。休日はジャムを手作りしている。<br/><a href="https://www.instagram.com/idei000sports/" target="_blank">https://www.instagram.com/idei000sports/ </a></p>
+<p class="artists" onmouseover="document.all.item('anal').style.visibility='visible'" onmouseout="document.all.item('anal').style.visibility='hidden'">
+<b class="yellow">おひアナ | Ohiana</b><br />1985年生まれ、2007年東京工業大学卒業<br/><a href="https://www.instagram.com/ohiana_summerangel/" target="_blank">https://www.instagram.com/ohiana_summerangel/ </a></p>
+<p class="artists" onmouseover="document.all.item('jon').style.visibility='visible'" onmouseout="document.all.item('jon').style.visibility='hidden'">
+<b class="yellow">ジョン・ボーン | Jon Vaughn</b><br />ビジュアル・アーティスト/キュレーター・デザイナー/スクリーン・プリンターミュージシャン/DJ/エクスタシー・エディションの編集長/ポップ・クイズ・レコードのディレクター/Videonomiconの共同設立者<br/><a href="https://www.instagram.com/jon_vaughn23/" target="_blank">https://www.instagram.com/jon_vaughn23/ </a></p>
+<p class="artists" onmouseover="document.all.item('akina').style.visibility='visible'" onmouseout="document.all.item('akina').style.visibility='hidden'">
+<b class="yellow">時吉あきな | Akina Tokiyoshi</b><br/>1994年生／京都造形芸術大学情報デザイン学科卒業。原画と複製物がだいたい同じだと認識できる状態を「ほぼイラストレーション」としてテーマにしている。 <br /><a href="https://www.instagram.com/akinatokiyoshi/" target="_blank">https://www.instagram.com/akinatokiyoshi/</a><br/></p>
+<p class="artists" onmouseover="document.all.item('shingo').style.visibility='visible'" onmouseout="document.all.item('shingo').style.visibility='hidden'">
+<b class="yellow">南田真吾 | Shingo Minamida</b><br />1993年大阪生まれ。イラストレーション制作と絵を描いています。近年の展示に「ビッグ3」opal times(大阪)、「グラビア」Tambourin gallery（東京） など。<br /><a href="https://www.instagram.com/shingominamida/" target="_blank">https://www.instagram.com/shingominamida/</a></p>
 
-<div id="tokiyoshi">
-<a href="#" class="close_overlay">×</a>
-<div class="modal_window">
-<img src="https://68.media.tumblr.com/4cb6daf921b0753ebe1ad2df964a48e5/tumblr_ov8vgyD8Xf1w0wfbzo2_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/3dddb2020d44bd773c03a8aa6c933020/tumblr_ov8vgyD8Xf1w0wfbzo5_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/acfab69850e8a86798ab5f778b5ce80a/tumblr_ov8vgyD8Xf1w0wfbzo4_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/28d74ab0e585aa3b72fd383de96b1cec/tumblr_ov8vgyD8Xf1w0wfbzo9_r1_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/5ef9fd25d47acd82281063b4b8a19a75/tumblr_ov8vgyD8Xf1w0wfbzo1_r1_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/3d59e838743ce82c18147aadbefabb06/tumblr_ov8vgyD8Xf1w0wfbzo3_r1_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/59bfd0b663c3ceff1ca7861a9c221aec/tumblr_ov8vgyD8Xf1w0wfbzo7_r1_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/ff9ed86c5db7c63afed42c9023822b9f/tumblr_ov8vgyD8Xf1w0wfbzo8_r1_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/c4ad5a7e2a3cf02b6160f2b29ec68b5d/tumblr_ov8vgyD8Xf1w0wfbzo6_r1_1280.jpg" width="100%"><br />
-<p><a class="close" href="#">【×】CLOSE</a><br /></p>
-</div>
-</div>
-
-<div id="minamida">
-<a href="#" class="close_overlay">×</a>
-<div class="modal_window">
-<img src="https://68.media.tumblr.com/7832e436a3ada946c81c3d7d9f4b67aa/tumblr_ov8w37xOJH1w0wfbzo5_r1_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/624d678493ceacd764fab0bbaba1a6d1/tumblr_ov8w37xOJH1w0wfbzo9_r1_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/0d15f571420e52d45d08bb6021ef91de/tumblr_ov8w37xOJH1w0wfbzo6_r1_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/6ae17b104dee8763fecb2e05a99a8b3f/tumblr_ov8w37xOJH1w0wfbzo8_r1_1280.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/a6c9bf084918aef45deab8f88e0a0eb9/tumblr_ov8w37xOJH1w0wfbzo7_r1_1280.jpg" width="100%"><br />
-<img src="https://pbs.twimg.com/media/DHV2X8fV0AA7Q3I.jpg" width="100%"><br />
-<img src="https://68.media.tumblr.com/97af025dbb69c460915d9a09da2e5952/tumblr_ov8w37xOJH1w0wfbzo10_r1_1280.jpg" width="100%"><br />
-<p><a class="close" href="#">【×】CLOSE</a><br /></p>
-</div>
-</div>
-</div>
-
-<div id="vrview"></div>
-<script>
-        var vrView;
-        window.addEventListener('load', onVrViewLoad)
-        function onVrViewLoad(){
-            vrView = new VRView.Player('#vrview', {
-                image: '//raw.githubusercontent.com/kazumasasajima/vrview/master/360/dragon.jpeg',
-            });
-        }
-</script>
+<table>
+<tbody>
+<tr>
+<td class="artists"><br/>
+</td>
+<td class="info" width="40%"></td>
+</tr>
+</tbody>
+</table>
 </body>
 </html>
