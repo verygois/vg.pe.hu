@@ -247,7 +247,7 @@ button:hover {
   color:#000;
   text-decoration:none;
   padding:0.25rem 0;
-  margin-right:2vw;
+  margin-right:1rem;
   border-bottom: 0.2rem dotted #000;
 }
 #march b {
@@ -259,6 +259,7 @@ button:hover {
 }
 #march h3 {
   text-align:center;
+  margin-bottom:2.5rem;
 }
 #march h3 a {
   color: #fff;
