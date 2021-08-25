@@ -164,7 +164,7 @@ button:hover {
   text-transform:capitalize;
   font-size:1.5rem;
   color:#000;
-  background-color:rgba(255,255,255,0.75);
+  background-color:rgba(255,255,255,0.95);
   padding:0.5rem 1rem;
   margin:0.5rem 1rem;
   border:1px solid #000;
@@ -174,9 +174,8 @@ button:hover {
   transition:1s all;
 }
 .list li:hover {
-  color:#000;
   cursor:pointer;
-  border:1px solid;
+  background-color:rgba(255,255,255,1);
   box-shadow:5px 5px #000;
   transition:.5s all;
 }
