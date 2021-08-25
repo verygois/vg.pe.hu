@@ -20,6 +20,12 @@ html {
   letter-spacing: -0.1vw;
 }
 
+#bio b,
+#march b,
+#march h3
+{font-family: 'Lucida Console', Courier, monospace;}
+
+
 #cover h1 {
   font-size:10vh;
   letter-spacing:4.5vw;
@@ -234,24 +240,38 @@ button:hover {
   z-index:100;
   display:block;
   width:95%;
-  margin:5vh auto 2.5vh;
-  font-size:2vh;
+  margin:2.5rem auto 1rem;
+  font-size:1rem;
 }
 #march a {
   color:#000;
   text-decoration:none;
-  padding:1vh 0;
+  padding:0.25rem 0;
   margin-right:2vw;
-  border-bottom: 0.25vw dotted #000;
+  border-bottom: 0.2rem dotted #000;
 }
-#bio b, #march b {font-family: 'Lucida Console', Courier, monospace;}
 #march b {
   background:#000;
   color:#fff;
   font-weight:500;
-  padding:1vh 1vw;
-  margin-right:2vw;
+  padding:0.25rem 0.5rem;
+  margin-right:1rem;
 }
+#march h3 {
+  text-align:center;
+}
+#march h3 a {
+  color: #fff;
+  padding:0.5rem 1rem;
+  background-color: #FF5733;
+  text-decoration: none;
+}
+#march h3 a:hover {
+  color: #FF5733;
+  background-color: #fff;
+}
+
+
 @media screen and (max-width: 750px){
   #cover h1 {
     font-size:17vw;
