@@ -9,7 +9,7 @@
 <script type="text/javascript">
 $(function(){
 $("#menu").load("/cv/menu.html");
-$("#book").load("/ctlg/book/");
+$("#greeting").load("/ctlg/book/");
 $("#compilation").load("/compilation/");
 $("#one").load("/1f/new.html");
 })
@@ -26,7 +26,7 @@ $("#one").load("/1f/new.html");
 </head>
 <body>
 <div id="menu"></div>
-<div id="book"></div>
+<div id="greeting"></div>
 <div id="compilation"></div>
 <div id="march">
 <h3><a href="wholesale.html">How to order at wholesale price</a></h3>
