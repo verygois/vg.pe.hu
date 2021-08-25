@@ -24,13 +24,13 @@ $("#book").load("/ctlg/book/");
 </head>
 <body>
 <div id="menu"></div>
+<div id="book"></div>
+<div id="compilation"></div>
 <div id="march">
 <div id="bio">
 <h3><a href="wholesale.html">How to order at wholesale price</a></h3>
 </div>
 </div>
-<div id="book"></div>
-<div id="compilation"></div>
 <div id="march">
 <b>Merchandise</b>
 <a href="/show/galfy/">Galfy</a>
