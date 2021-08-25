@@ -32,7 +32,7 @@ $("#one").load("/1f/");
 <div id="march">
 <h3><a href="wholesale.html">How to order at wholesale price</a></h3>
 </div>
-<div id=""></div>
+<div id="one"></div>
 <div id="march">
 <b>Merchandise</b>
 <a href="/show/galfy/">Galfy</a>
