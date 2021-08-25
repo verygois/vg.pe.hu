@@ -11,12 +11,13 @@ $(function(){
 $("#menu").load("/cv/menu.html");
 $("#greeting").load("/ctlg/book/");
 $("#compilation").load("/compilation/");
-$("#one").load("/1f/new.html");
+$("#one").load("/1f/hello.html");
 })
 </script>
 <link rel="icon" href="/cv/logo.png">
 <link rel="stylesheet" href="/css/ctlg.css"/>
 <link rel="stylesheet" type="text/css" href="/css/menu.css"/>
+<link rel="stylesheet" type="text/css" media="print" href="/1f/print.css" />
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 <style type="text/css">
