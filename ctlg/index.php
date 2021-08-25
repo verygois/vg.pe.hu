@@ -10,7 +10,7 @@
 $(function(){
 $("#menu").load("/cv/menu.html");
 $("#compilation").load("/compilation/");
-$("#links").load("/ctlg/links.php");
+$("#book").load("/ctlg/book/");
 })
 </script>
 <link rel="icon" href="/cv/logo.png">
@@ -30,6 +30,7 @@ $("#links").load("/ctlg/links.php");
 </div>
 </div>
 <div id="compilation"></div>
+<div id="book"></div>
 <div id="march">
 <b>Merchandise</b>
 <a href="/show/galfy/">Galfy</a>
