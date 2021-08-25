@@ -11,7 +11,7 @@ $(function(){
 $("#menu").load("/cv/menu.html");
 $("#greeting").load("/ctlg/book/");
 $("#compilation").load("/compilation/");
-$("#one").load("/1f/hello.html");
+$("#one").load("/1f/");
 })
 </script>
 <link rel="icon" href="/cv/logo.png">
