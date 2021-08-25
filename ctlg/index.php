@@ -27,9 +27,7 @@ $("#book").load("/ctlg/book/");
 <div id="book"></div>
 <div id="compilation"></div>
 <div id="march">
-<div id="bio">
 <h3><a href="wholesale.html">How to order at wholesale price</a></h3>
-</div>
 <b>Merchandise</b>
 <a href="/show/galfy/">Galfy</a>
 <a href="/show/lv/">Louis Versus</a>
