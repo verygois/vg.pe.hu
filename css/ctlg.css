@@ -261,13 +261,15 @@ button:hover {
   text-align:center;
   margin-bottom:5rem;
 }
+#march a {
+  text-decoration: none;
+  padding:0.5rem 1rem;
+}
+#march a:hover,
 #march h3 a {
   color: #fff;
-  padding:0.5rem 1rem;
   background-color: #FF5733;
-  text-decoration: none;
 }
-#march a,
 #march h3 a:hover {
   color: #FF5733;
   background-color: #fff;
