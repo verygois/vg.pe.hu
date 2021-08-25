@@ -1,5 +1,5 @@
 const random = [
-  "/ctlg/book/emeraldclitoris/10005.jpg"
+  "/ctlg/book/emeraldclitoris/10005.jpg",
   "/ctlg/book/emeraldclitoris/sny4.jpg",
   "/ctlg/book/emeraldclitoris/sny6.jpg",
   "/ctlg/book/emeraldclitoris/sny9.jpg",
