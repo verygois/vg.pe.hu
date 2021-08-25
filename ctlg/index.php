@@ -15,7 +15,6 @@ $("#book").load("/ctlg/book/");
 </script>
 <link rel="icon" href="/cv/logo.png">
 <link rel="stylesheet" href="/css/ctlg.css"/>
-<link rel="stylesheet" type="text/css" href="/css/bio.css"/>
 <link rel="stylesheet" type="text/css" href="/css/menu.css"/>
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
