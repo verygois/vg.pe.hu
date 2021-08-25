@@ -30,6 +30,9 @@ $("#one").load("/1f/new.html");
 <div id="compilation"></div>
 <div id="march">
 <h3><a href="wholesale.html">How to order at wholesale price</a></h3>
+</div>
+<div id="one"></div>
+<div id="march">
 <b>Merchandise</b>
 <a href="/show/galfy/">Galfy</a>
 <a href="/show/lv/">Louis Versus</a>
