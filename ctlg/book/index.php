@@ -8,7 +8,7 @@ $profile = (string)filter_input(INPUT_POST, 'profile');
 $language = (string)filter_input(INPUT_POST, 'language');
 $status = (string)filter_input(INPUT_POST, 'status');
 
-$fp = fopen('/ctlg/book/index.csv', 'a+b');
+$fp = fopen('index.csv', 'a+b');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     flock($fp, LOCK_EX);
     fputcsv($fp, [$id, $name, $profile, $language, $status, $questions,]);
