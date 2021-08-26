@@ -13,13 +13,15 @@ body {
 }
 
 #portrait img,
-.infomation {
+.infomation,
+.credit {
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
 }
 #who,
-.infomation {
+.infomation,
+.credit {
   font-family: "SimSong", "MS Mincho", selif;
   font-stretch: condensed;
   font-variant: common-ligatures tabular-nums;
@@ -89,25 +91,29 @@ body {
   filter: invert(100%);
 }
 
-.infomation {
+.infomation,
+.credit {
   margin-top:2rem;
   text-align: center;
 }
-.infomation .click {
+.infomation .click,
+.credit .click {
   color:#000;
   text-shadow: #fff 1px 1px;
   font-size: 200%;
   font-family: 'Times New Roman', serif;
   padding: 1rem;
 }
-.infomation .click:hover {
+.infomation .click:hover,
+.credit .click:hover {
   color:#fff;
   cursor:pointer;
   transform: scale(1.25);
   text-shadow: #000 1px 1px;
 }
 
-.infomation p {
+.infomation p,
+.credit p {
   padding: 0.5rem;
   margin-top:2rem;
   line-height:125%;
@@ -115,7 +121,8 @@ body {
   border-radius: 1rem;
   background-color:rgba(255,255,255,0.55);
 }
-.infomation p b {
+.infomation p b,
+.credit p b {
   color:#fff;
   text-shadow: #000 1px 1px;
   font-family: "Great Vibes", cursive;
@@ -125,7 +132,8 @@ body {
   font-size: 1rem;
   line-height:200%;
 }
-.infomation p a {
+.infomation p a,
+.credit p a {
   display:inline-block;
   letter-spacing: -0.2vw;
   word-spacing: -.2ch;
@@ -141,7 +149,8 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.infomation p a:hover {
+.infomation p a:hover,
+.credit p a:hover {
   background: linear-gradient(
 -90deg
 , #fff, #ccc, #aaa);
