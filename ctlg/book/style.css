@@ -145,7 +145,7 @@ body {
 -90deg
 , #fff, #ccc, #aaa);
   background-size: 400% 400%;
-  animation: gradientBG 10s ease infinite;
+  animation: gradientBG 5s ease infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -155,7 +155,7 @@ body {
 -90deg
 , #fff, #ccc, #aaa);
   background-size: 400% 400%;
-  animation: gradientBG 10s ease infinite;
+  animation: gradientBG 2.5s ease infinite;
   -webkit-text-fill-color: #000;
 }
 
