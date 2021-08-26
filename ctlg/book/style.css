@@ -235,13 +235,17 @@ text-shadow: #000 1px 1px;
 background-color:rgba(255,255,255,0.5);
 }
 
-@media screen and (max-width: 500px){
-.popup p {width:90%; height:85vh; margin-top:5vh;}
-.close {font-size:10vw;}
-}
-
 @keyframes gradientBG {
 0% {background-position: 0% 50%;}
 50% {background-position: 100% 50%;}
 100% {background-position: 0% 50%;}
+}
+
+@media screen and (max-width: 750px){
+.infomation {display:none;}
+}
+
+@media screen and (max-width: 500px){
+.popup p {width:90%; height:85vh; margin-top:5vh;}
+.close {font-size:10vw;}
 }
