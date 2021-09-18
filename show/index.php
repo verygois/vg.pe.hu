@@ -33,7 +33,7 @@ fclose($fp);
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Direct | Very Gois</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="/jp/cm/show/org.js"></script>
+<script src="/jp/show/org.js"></script>
 <script type="text/javascript">
 $(function(){
 $("#menu").load("/cv/menu.html");
