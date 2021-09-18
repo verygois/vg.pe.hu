@@ -42,8 +42,8 @@ $("#menu").load("/cv/menu.html");
 <script type="text/javascript">
 </script>
 <link rel="stylesheet" type="text/css" href="/css/menu.css"/>
-<link rel="stylesheet" type="text/css" href="/jp/cm/show/book.css"/>
-<link rel="stylesheet" type="text/css" href="/jp/cm/cv/greating.css"/>
+<link rel="stylesheet" type="text/css" href="/css/list.css"/>
+<link rel="stylesheet" type="text/css" href="/css/greating.css"/>
 <style type="text/css">
 .list .date,
 .list .title {
