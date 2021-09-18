@@ -1,13 +1,35 @@
+#greating {
+  position: relative;
+  z-index: 10;
+  padding:0 2.5%;
+  margin:5vh auto 0;
+  width:90%; height:90vh;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+#greating::-webkit-scrollbar{
+  width:2rem;
+}
+#greating::-webkit-scrollbar-track{
+  border-radius: 2rem;
+  border:2px solid;
+}
+#greating::-webkit-scrollbar-thumb{
+  background:#000;
+  border-radius: 2rem;
+}
+
 #cv {
-  font-size:5vw;
-  padding:2.5vh 5%;
-  font-family:"MS Mincho";
+  font-size:1.5rem;
+  padding:0;
   letter-spacing:0.05rem;
-  border-bottom: 1px dotted #000;
+  font-family: sans-serif;
 }
 #cv a {
-  display:inline-block;
   color:#000;
+  font-family: serif;
+  font-style: italic;
+  display:inline-block;
   padding:1%;
   text-decoration:none;
   filter: blur(1.25vw);
@@ -21,47 +43,35 @@
   transform: scale(1.5,1.5);
   transition: all 1000ms ease;
 }
-#cv .jp {
-  font-size:45%;
+#cv .note {
+  font-size:75%;
   line-height:150%;
   font-style:italic;
-  margin:0;
-  padding-bottom:5vw;
 }
-#cv .jp a {color:blue;}
 
-#cv_link {padding:2.5%;}
 #cv_link p {
-  font-size:2vw;
-  line-height:200%;
+  position: fixed;
+  bottom:0;
+  font-size:1rem;
+  padding:0 2.5%;
+  margin:1rem auto;
+  z-index: 100;
 }
 #cv_link a {
   color:#000;
   text-decoration:none;
-  padding:0.25vw 0;
-  margin-right:2vw;
-  border-bottom: 0.25vw dotted #000;
+  padding:0.25rem 0;
+  margin-right:0.5rem;
+  border-bottom: 2px dotted #000;
+  line-height: 200%;
 }
 #cv_link b {
-  font-size:2vw;
+  font-size:1rem;
   background:#000;
   color:#fff;
   font-weight:500;
-  padding:0.5vw 1vw;
-  margin-right:2vw;
-}
-input[type="email"] {
-  width:50vw;
-  font-size:2vw;
-  margin-right:0.5vw;
-  padding:0.5vw;
-}
-input[type="submit"] {
-  font-size:2vw;
-  padding:0.5vw;
-}
-.clear {
-  display:inline-block;
+  padding: 0.5rem;
+  margin-right:1rem;
 }
 
 @keyframes blurin {
