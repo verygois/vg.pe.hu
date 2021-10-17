@@ -30,7 +30,7 @@ fclose($fp);
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>VG CTLG</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="http://creative-community.pe.hu/coding/js/org.js"></script>
+<script src="https://creative-community.space/coding/js/org.js"></script>
 <script type="text/javascript">
 $(function(){
 $("#").load("");
