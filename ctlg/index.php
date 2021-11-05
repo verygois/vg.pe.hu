@@ -9,7 +9,6 @@
 <script type="text/javascript">
 $(function(){
 $("#menu").load("/cv/menu.html");
-$("#greeting").load("/ctlg/book/");
 $("#compilation").load("/compilation/");
 $("#one").load("/1f/");
 })
@@ -27,11 +26,7 @@ $("#one").load("/1f/");
 </head>
 <body>
 <div id="menu"></div>
-<div id=""></div>
 <div id="compilation"></div>
-<div id="march">
-<h3><a href="wholesale.html">How to order at wholesale price</a></h3>
-</div>
 <div id="one"></div>
 <div id="march">
 <b>Merchandise</b>
