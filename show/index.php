@@ -102,6 +102,9 @@ $("#menu").load("/cv/menu.html");
 <input type="radio" name="tag" value="d" id="d">
 <label for="d" class="label"># series</label></li>
 <li>
+<input type="radio" name="tag" value="i" id="i">
+<label for="i" class="label">Broadcasting</label></li>
+<li>
 <input type="radio" name="tag" value="e" id="e">
 <label for="e" class="label">1F</label></li>
 <li>
