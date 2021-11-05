@@ -90,9 +90,6 @@ $("#menu").load("/cv/menu.html");
 <input type="radio" name="tag" value="a" id="a">
 <label for="a" class="label">Upcoming</label></li>
 <li>
-<input type="radio" name="tag" value="g" id="g">
-<label for="g" class="label">Work in Progress</label></li>
-<li>
 <input type="radio" name="tag" value="b" id="b">
 <label for="b" class="label">Art</label></li>
 <li>
@@ -102,14 +99,14 @@ $("#menu").load("/cv/menu.html");
 <input type="radio" name="tag" value="d" id="d">
 <label for="d" class="label"># series</label></li>
 <li>
-<input type="radio" name="tag" value="i" id="i">
-<label for="i" class="label">Broadcasting</label></li>
-<li>
 <input type="radio" name="tag" value="e" id="e">
 <label for="e" class="label">1F</label></li>
 <li>
 <input type="radio" name="tag" value="f" id="f">
 <label for="f" class="label">2F</label></li>
+<li>
+<input type="radio" name="tag" value="g" id="g">
+<label for="g" class="label">The Symphony of Masterpieces</label></li>
 <li>
 <input type="radio" name="tag" value="h" id="h">
 <label for="h" class="label">Completed</label></li>
