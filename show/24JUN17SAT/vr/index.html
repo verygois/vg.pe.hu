@@ -75,6 +75,10 @@ img { padding: 1.5%; }
   width:100%; height:55vw;
   border:none;
 }
+#vrview iframe {
+  width:100%; height:100vh;
+  border:none;
+}
 /* CSS3 ModalWindow SET
 -------------------------- */
 @-webkit-keyframes modalFadeIn {
@@ -193,6 +197,7 @@ Sorry, your browser doesn't support embedded videos.
 </div>
 </div>
 </div>
+<div id="vrview">
 <script type="text/javascript">
 var msg1 = '<iflame src="22_04.html"></iframe>';
 var msg2 = '<iflame src="4_12.html"></iframe>';
@@ -222,7 +227,7 @@ else if(hour >= 19 && hour <= 21){
 else if(hour >= 22 && hour <= 23){
 	document.write(msg6);
 }
-
 </script>
+</div>
 </body>
 </html>
