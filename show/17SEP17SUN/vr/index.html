@@ -258,6 +258,12 @@ div#modal div:target {
                 image: '../000.jpg',
             });
         }
+
+$('a[href^="#"]').click(function(){
+   var href= $(this).attr("href");
+   var target = $(href == "#" || href == "" ? 'html' : href);
+   return false;
+ });
 </script>
 </body>
 </html>
