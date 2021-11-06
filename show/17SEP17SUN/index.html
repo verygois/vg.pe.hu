@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>#17SEP17SUN</title>
+<script src="//storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
 <meta charset="UTF-8">
 <style type="text/css">
@@ -84,8 +85,6 @@ div#modal div:target {
     display:block;
 }
 </style>
-<script src="//storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
-
 </head>
 <body>
 <div id="contents">
@@ -101,7 +100,6 @@ div#modal div:target {
 
 <div id="modal">
 <div id="about">
-<a href="#" class="close_overlay">×</a>
 <div class="modal_window">
 <h1>#17SEP17SUN</h1>
 <p><br/></p>
@@ -120,9 +118,9 @@ ID/Pass is included in</p>
   window.addEventListener('load', onVrViewLoad)
   function onVrViewLoad() {
     var vrView = new VRView.Player('#vrview', {
-      image: 'https://github.com/verygois/vg.pe.hu/blob/45e067677247d257e5b2f8f9918241fd851fd1fc/show/17SEP17SUN/000.jpg',
-      width: '100%',
-      height: '100%',
+      image: './img/tyopress.jpg', //画像を埋め込みたい場合。値にパスを指定。
+      width: '100%', //コンテンツの幅を指定。
+      height: '100%', //コンテンツの高さを指定。
     });
   }
 </script>
