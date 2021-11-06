@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>#24JUN17SAT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
+<meta charset="UTF-8">
+<style type="text/css">
+#vrview iframe { position: fixed; top: 0; left: 0; width:100%; height:100%; border:none; }
+</style>
+<script src="/vr/build/vrview.min.js"></script>
+
+</head>
+<body>
+<div id="vrview"></div>
+<script>
+        var vrView;
+        window.addEventListener('load', onVrViewLoad)
+        function onVrViewLoad(){
+            vrView = new VRView.Player('#vrview', {
+                image: '/show/24JUN17SAT/vr/13_15.jpg',
+            });
+        }
+</script>
+</body>
+</html>
