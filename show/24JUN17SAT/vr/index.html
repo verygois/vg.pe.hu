@@ -225,6 +225,11 @@ else if(hour >= 19 && hour <= 21){
 else if(hour >= 22 && hour <= 23){
 	document.write(msg6);
 }
+$('a[href^="#"]').click(function(){
+   var href= $(this).attr("href");
+   var target = $(href == "#" || href == "" ? 'html' : href);
+   return false;
+ });
 </script>
 </div>
 </body>
