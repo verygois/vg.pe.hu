@@ -104,7 +104,7 @@ div#modal div:target {
 <a href="#" class="close_overlay">×</a>
 <div class="modal_window">
 <h1>#17SEP17SUN</h1>
-<p><br /></p>
+<p><br/></p>
 <p>
 ID/Pass is included in</p>
 <a class="close" href="http://vg.pe.hu/compilation/04/">Very Gois #04</a>
@@ -117,13 +117,14 @@ ID/Pass is included in</p>
 
 <div id="vrview"></div>
 <script>
-        var vrView;
-        window.addEventListener('load', onVrViewLoad)
-        function onVrViewLoad(){
-            vrView = new VRView.Player('#vrview', {
-                image: '000.jpg',
-            });
-        }
+  window.addEventListener('load', onVrViewLoad)
+  function onVrViewLoad() {
+    var vrView = new VRView.Player('#vrview', {
+      image: '000.jpg', //画像を埋め込みたい場合。値にパスを指定。
+      width: '100%', //コンテンツの幅を指定。
+      height: '100%', //コンテンツの高さを指定。
+    });
+  }
 </script>
 </body>
 </html>
