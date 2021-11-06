@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
   <title>VR view</title>
@@ -8,7 +8,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/vr/style.css">
 </head>
 
 <body>
@@ -20,12 +20,8 @@
   </div>
 
   <div id="play-overlay">
-    <img src="images/ic_play_arrow_white_24dp.svg" />
+    <img src="/vr/images/ic_play_arrow_white_24dp.svg" />
   </div>
-
-  <a id="watermark" href="http://g.co/vr/view" target="_blank">
-    <img src="images/ic_info_outline_black_24dp.svg" />
-  </a>
 
   <script>
     WebVRConfig = {
@@ -34,8 +30,8 @@
     };
   </script>
 
-  <script src="build/three.js"></script>
-  <script src="build/embed.js"></script>
+  <script src="/vr/build/three.js"></script>
+  <script src="/vr/build/embed.js"></script>
 </body>
 
 </html>
