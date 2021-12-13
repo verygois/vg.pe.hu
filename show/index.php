@@ -105,9 +105,6 @@ $("#menu").load("/cv/menu.html");
 <input type="radio" name="tag" value="f" id="f">
 <label for="f" class="label">2F</label></li>
 <li>
-<input type="radio" name="tag" value="g" id="g">
-<label for="g" class="label">The Symphony of Masterpieces</label></li>
-<li>
 <div class="reset">
 <input type="reset" name="reset" value="View All" class="reset-button">
 </div>
