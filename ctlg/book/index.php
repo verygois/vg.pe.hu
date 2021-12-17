@@ -43,6 +43,9 @@ $("#").load("");
 </style>
 </head>
 <body>
+<div id="cover">
+<h1><span>VG BOOK</span></h1>
+</div>
 <form id="org">
 <div class="search-box language">
 <ul>
