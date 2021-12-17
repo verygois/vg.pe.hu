@@ -26,10 +26,10 @@ $("#one").load("/1f/");
 </head>
 <body>
 <div id="menu"></div>
-<div id="compilation"></div>
 <div id="march">
 <h3><a href="/ctlg/book/">INDEX</a></h3>
 </div>
+<div id="compilation"></div>
 <div id="one"></div>
 <div id="march">
 <b>Merchandise</b>
