@@ -9,6 +9,7 @@
 <script type="text/javascript">
 $(function(){
 $("#menu").load("/cv/menu.html");
+$("#book").load("/ctlg/book/");
 $("#compilation").load("/compilation/");
 $("#one").load("/1f/");
 })
@@ -26,6 +27,7 @@ $("#one").load("/1f/");
 </head>
 <body>
 <div id="menu"></div>
+<div id="book"></div>
 <div id="compilation"></div>
 <div id="march">
 <h3><a href="#">????</a></h3>
