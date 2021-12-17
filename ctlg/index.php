@@ -31,7 +31,9 @@ $("#one").load("/1f/");
 <div id="march">
 <h3><a href="#">????</a></h3>
 </div>
+<hr/>
 <div id="book"></div>
+<hr/>
 <div id="one"></div>
 <div id="march">
 <b>Merchandise</b>
