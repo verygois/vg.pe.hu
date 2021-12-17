@@ -40,7 +40,7 @@ $("#").load("");
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 <style type="text/css">
-    #cover {position:fixed; width:100vw; height:100vh; z-index:0;}
+    #cover {position:fixed; width:100vw; height:100vh; z-index:-1;}
 </style>
 </head>
 <body>
