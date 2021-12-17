@@ -27,13 +27,12 @@ $("#one").load("/1f/");
 </head>
 <body>
 <div id="menu"></div>
+<div id="book"></div>
+<hr/>
 <div id="compilation"></div>
 <div id="march">
 <h3><a href="#">????</a></h3>
 </div>
-<hr/>
-<div id="book"></div>
-<hr/>
 <div id="one"></div>
 <div id="march">
 <b>Merchandise</b>
