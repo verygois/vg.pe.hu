@@ -4,11 +4,10 @@ const random = [
   "/ctlg/book/emeraldclitoris/sny6.jpg",
   "/ctlg/book/emeraldclitoris/sny9.jpg",
   "/ctlg/book/emeraldclitoris/sny12.jpg",
-  "/1f/04/01.jpg",
-  "/1f/04/02.jpg",
-  "/1f/04/03.jpg",
-  "/1f/04/04.jpg",
-  "/1f/04/05.jpg"
+  "/ctlg/book/emeraldclitoris/01.jpg",
+  "/ctlg/book/emeraldclitoris/02.jpg",
+  "/ctlg/book/emeraldclitoris/03.jpg",
+  "/ctlg/book/emeraldclitoris/04.jpg"
   ];
   
   function randomImg(randomArray) {

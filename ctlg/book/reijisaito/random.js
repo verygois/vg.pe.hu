@@ -1,7 +1,10 @@
 const random = [
-    "http://reijisaito.com/Top_files/neck%20b%202.png",
-    "http://reijisaito.com/Top_files/DSC05934%20%20HP.jpg",
-    "http://reijisaito.com/Top_files/DSC06045%20-%20%202.jpg"
+    "/ctlg/book/reijisaito/001.png",
+    "/ctlg/book/reijisaito/002.png",
+    "/ctlg/book/reijisaito/003.png",
+    "/ctlg/book/reijisaito/004.png",
+    "/ctlg/book/reijisaito/005.png",
+    "/ctlg/book/reijisaito/006.png"
   ];
   
   function randomImg(randomArray) {
