@@ -8,14 +8,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript">
         $(function() {
-            $("#archives").load("archives.html");
+            $("#one").load("01.html");
+            $("#archives").load("/up/tsom/archives.html");
         })
     </script>
     <link rel="stylesheet" type="text/css" href="/css/playing.css" />
     <style type="text/css">
         body {
-            color: #87cefa;
-            background: #fffacd;
+            color: #551A8B;
+            background: #0000EE;
+            -webkit-text-stroke: 0.05rem #fff;
+            text-stroke: 0.05rem #fff;
             font-size: 90%;
             font-family: "Times New Roman";
             padding: 0;
@@ -27,7 +30,6 @@
             width: 90vw;
             height: 90%;
             position: absolute;
-            padding: 5% 5vw;
             left: 0%;
             font-family: "Arial";
         }
@@ -42,7 +44,7 @@
         }
         
         #content a {
-            color: #000;
+            color: #ffff00;
             text-decoration: none;
         }
         
@@ -52,21 +54,18 @@
         }
         
         #content p u {
-            border: #87cefa solid 0.25rem;
-            color: #fffacd;
-            background: #87cefa;
+            border: solid 0.25rem;
             border-radius: 1rem;
             padding: 1rem;
             text-decoration: none;
         }
         
         #content u {
-            border: #87cefa solid 1px;
-            color: #fffacd;
-            background: #87cefa;
+            border: solid 1px;
             border-radius: 0.25rem;
             padding: 0.25rem;
             text-decoration: none;
+            box-shadow: 0.05rem 0.05rem #fff;
         }
         
         hr {
@@ -92,32 +91,26 @@
             }
         }
     </style>
-    <title>The Symphony of Masterpieces</title>
+    <title>Website with the Sounds</title>
 </head>
 
 <body>
-    <p id="about"><a href="#" onclick="disp(); return false;">2022.04.15</a></p>
+    <p id="about"><a href="#" onclick="disp(); return false;">2022.5.14</a></p>
     <script>
         // <![CDATA[
         function disp() {
-            window.alert('ニュートラムから窓の外を映した映像と、最近知った好きな曲');
+            window.alert('2022.5.14 #1 : Playing on セックスの瞬間');
         }
         // ]]>
     </script>
     <div id="content">
-        <p><span><i>New Tram</i></p>
-<span>The Symphony of <i>Masterpieces</i> on <u>SoundCloud</u></span></span>
-            <hr/>
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jDv57WWjJ58/" frameborder="0" allowfullscreen></iframe>
-            <hr/>
-            <div class="list">
-                <u>List</u><br/><br/> arjun ram srivatsa <i>silent</i><br/> phansyphish <i>103456050_3223543737669156_6470957954906922721_n</i><br/> Lucid Luc <i>D l E i A f T e H</i><br/> undomesticated_bb <i>new recording 1</i><br/> No Debts <i>without You</i><br/>                Ange Halliwell <i>Le Sorcière Et La Vagabond</i><br/> Eterna & Amalcrossing <i>June</i><br/>
-            </div>
-            <hr/>
-            <p>Selected by <i>SK.Ⅱ</i></p>
-            <hr/>
-            <div id="archives"></div>
-            <hr/>
+        <p><span><u>Website</u> with <i>the Sounds</i></span></p>
+        <hr/>
+        <div id="one"></div>
+        <p>Selected by <i>SK.Ⅱ</i></p>
+        <hr/>
+        <div id="archives"></div>
+        <hr/>
     </div>
 </body>
 
