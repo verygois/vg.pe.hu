@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#archives").load("/up/tsom/archives.html");
+        })
+    </script>
+    <link rel="stylesheet" type="text/css" href="/css/playing.css" />
+    <style type="text/css">
+         :root {
+            --bg-color: #fff;
+            --text-color: #000;
+            --link-color: #000;
+            --hover-color: #aaa;
+        }
+        
+        #content p {
+            font-size: 4.5rem;
+            -webkit-text-stroke: 0.05rem #000;
+            text-stroke: 0.05rem #000;
+        }
+        
+        #content p u {
+            border: #000 solid 0.25rem;
+            border-radius: 1rem;
+            box-shadow: 0.1rem 0.1rem #000;
+            padding: 1rem;
+            text-decoration: none;
+        }
+        
+        #content u {
+            border: #000 solid 1px;
+            border-radius: 0.25rem;
+            padding: 0.25rem 0.5rem;
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        body {
+            color: var(--text-color);
+            background: var(--bg-color);
+            font-size: 90%;
+            font-family: "Times New Roman";
+            padding: 0;
+            margin: 0;
+        }
+        
+        #content {
+            font-size: 1.25rem;
+            width: 90vw;
+            height: 90%;
+            padding: 5% 5vw;
+            font-family: "Arial";
+        }
+        
+        #content b,
+        #content u {
+            font-size: 75%;
+        }
+        
+        #content a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+        
+        #content a:hover {
+            background: var(--hover-color);
+        }
+        
+        #content i {
+            font-family: "Times New Roman";
+            font-size: 125%;
+        }
+        
+        hr {
+            border: none;
+            padding: 2.5%;
+        }
+        
+        @media screen and (max-width: 750px) {
+            #content p {
+                zoom: 75%;
+            }
+            #content {
+                font-size: 2.5vw;
+            }
+        }
+        
+        @media screen and (max-width: 500px) {
+            #content p {
+                zoom: 60%;
+            }
+            #content {
+                font-size: 1rem;
+            }
+        }
+    </style>
+    <title>The Symphony of Masterpieces</title>
+</head>
+
+<body>
+    <p id="about"><a href="#" onclick="disp(); return false;">0000.00.00</a></p>
+    <script>
+        // <![CDATA[
+        function disp() {
+            window.alert('Infomation');
+        }
+        // ]]>
+    </script>
+    <div id="content">
+        <span>The Symphony of <i>Masterpieces</i></span>
+        <p><span>The <i>Songs</i> will be <i>№18</i> of <u>a‿a</u></span></p>
+        <hr/>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/AOKcwzr0Z84" frameborder="0" allowfullscreen></iframe>
+        <hr/>
+        <div class="list" style="">
+            <a href="https://www.youtube.com/watch?v=gZouMYgTlGk">Dragon Ash <i>Fantasista</i> by ニューヨーク</a><br/>
+            <a href="https://dizm.mbs.jp/title/?program=shirankedo&episode=78">KEN-U <i>DOKO</i> by SHIRANKEDO</a><br/>
+            <a href="https://www.youtube.com/watch?v=7wZPXN_P-aw">KREVA <i>C'mon, Let's go</i> by Universal Studios Japan</a><br/>
+        </div>
+        <hr/>
+        <p>Selected by <i>abi the best items</i></p>
+        <p>
+            <a href="https://www.instagram.com/abi_the_best_items/"><u>Instagram</u></a>
+        </p>
+        <hr/>
+        <div id="archives"></div>
+        <hr/>
+    </div>
+</body>
+
+</html>
