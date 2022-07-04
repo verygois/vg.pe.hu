@@ -88,17 +88,20 @@ $("#menu").load("/cv/menu.html");
 <div class="search-box tag">
 <ul>
 <li>
+<input type="radio" name="tag" value="a" id="a">
+<label for="a" class="label">Work</label></li>
+<li>
 <input type="radio" name="tag" value="b" id="b">
-<label for="b" class="label">Reading</label></li>
+<label for="b" class="label">Poem</label></li>
 <li>
 <input type="radio" name="tag" value="c" id="c">
-<label for="c" class="label">Listening</label></li>
+<label for="c" class="label">Mix/Playlist</label></li>
 <li>
 <input type="radio" name="tag" value="d" id="d">
-<label for="d" class="label">Watching</label></li>
+<label for="d" class="label">Video/Photo</label></li>
 <li>
 <input type="radio" name="tag" value="e" id="e">
-<label for="e" class="label">Let's Do</label></li>
+<label for="e" class="label">Website</label></li>
 <li>
 <div class="reset">
 <input type="reset" name="reset" value="View All" class="reset-button">
