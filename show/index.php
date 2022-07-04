@@ -99,11 +99,11 @@ $("#menu").load("/cv/menu.html");
 <input type="radio" name="tag" value="d" id="d">
 <label for="d" class="label"># series</label></li>
 <li>
-<input type="radio" name="tag" value="e" id="e">
-<label for="e" class="label">1F</label></li>
-<li>
 <input type="radio" name="tag" value="f" id="f">
 <label for="f" class="label">2F</label></li>
+<li>
+<input type="radio" name="tag" value="e" id="e">
+<label for="e" class="label">1F</label></li>
 </ul>
 </div>
 </form>
